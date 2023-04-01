@@ -7,7 +7,7 @@ const fs = require("fs")
 
 app.get("/", (req, res) => { 
     let message = "hi buddy "
-    message += req.query.name
+    //message += req.query.name
     res.send(message)
 })
 
