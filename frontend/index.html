@@ -4,43 +4,15 @@
     <meta charset="UTF-8">
     <title>chrismacarthur.dev</title>
     <link rel="stylesheet" type="text/css" href="/design/style.css">
-	<link rel="icon" type="image/ico" href="/images/favicon.ico">
+    <link rel="icon" type="image/ico" href="/images/favicon.ico">
   </head>
   <body>
-    <header>
-      <nav>
-        <ul>
-		  <li><a href="https://github.com/chrismacarthur" target="_blank"><img src="/images/github.png" alt="GitHub" height="20" width="20"></a></li>
-		  <li><a href="https://www.linkedin.com/in/chris-macarthur/" target="_blank"><img src="/images/linkedin.png" alt="LinkedIn" height="20" width="20"></a></li>
-          <li id="nav-title">chrismacarthur.dev</li>
-          <li><a href="#about-me">About</a></li>
-          <li><a href="#portfolio">Projects</a></li>
-		  <li><a href="#essays">Essays</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-	  <section id="about-me">
-		<h2>About Me</h2>
-		<img id="portrait" src="/images/portrait.png" alt="portrait">
-		<p>Hey! My name is Chris MacArthur, I am a fourth year Bachelor of Computer Science student at the University of New Brunswick.</p>
-	  </section>
-      <section id="portfolio">
-		<br><br>
-		<br><br>
-		<br><br>
-		<br><br>
-		<br><br>
-		<br><br>
-        <h2>Under Construction..</h2>
-		<p>Eventually, this website will act as a hub for programming projects I have worked on, essays that I am especially proud of, and potentially more. For now, enjoy my face.</p>
-      </section>
-	  <br><br>
-		<br><br>
-		<br><br>
-		<br><br>
-    </main>
-    <footer>
-    </footer>
+    <div id="root"></div>
+    <script src="/backend/node_modules/react/umd/react.production.min.js"></script>
+    <script src="/backend/node_modules/react-dom/umd/react-dom.production.min.js"></script>
+    <script src="/js/site.js"></script>
+    <script>
+      ReactDOM.render(React.createElement(App), document.getElementById("root"));
+    </script>
   </body>
 </html>
