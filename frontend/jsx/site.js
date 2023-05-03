@@ -35,7 +35,8 @@ function AboutMe() {
       <h2>About Me</h2>
       <img id="portrait" src="/images/portrait.png" alt="portrait" />
       <p>
-        Hey! My name is Chris MacArthur, I am a fourth year Bachelor of Computer Science student at the University of New Brunswick.
+        Hey! My name is Chris MacArthur, I recently completed my Bachelor of Computer Science degree 
+        from The University of New Brunswick.
       </p>
     </section>
   );
@@ -49,7 +50,9 @@ function Portfolio() {
       <br /><br /><br /><br /><br /><br />
       <h2>Under Construction..</h2>
       <p>
-        Eventually, this website will act as a hub for programming projects I have worked on, essays that I am especially proud of, and potentially more. For now, enjoy my face.
+        Eventually, this website will act as a hub for programming projects I have worked on, essays 
+        that I am especially proud of, and potentially more. For now, enjoy my face on the 
+        'About' tab.
       </p>
     </section>
   );
@@ -63,7 +66,9 @@ function Essays() {
       <br /><br /><br /><br /><br /><br />
       <h2>Under Construction..</h2>
       <p>
-        Eventually, this website will act as a hub for programming projects I have worked on, essays that I am especially proud of, and potentially more. For now, enjoy my face.
+        Eventually, this website will act as a hub for programming projects I have worked on, essays 
+        that I am especially proud of, and potentially more. For now, enjoy my face on the 
+        'About' tab.
       </p>
     </section>
   );

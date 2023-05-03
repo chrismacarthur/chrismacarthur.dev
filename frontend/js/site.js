@@ -54,19 +54,19 @@ function AboutMe() {
     id: "portrait",
     src: "/images/portrait.png",
     alt: "portrait"
-  }), /*#__PURE__*/React.createElement("p", null, "Hey! My name is Chris MacArthur, I am a fourth year Bachelor of Computer Science student at the University of New Brunswick."));
+  }), /*#__PURE__*/React.createElement("p", null, "Hey! My name is Chris MacArthur, I recently completed my Bachelor of Computer Science degree from The University of New Brunswick."));
 }
 {/* "Portfolio" portion of the webpage, TBA. */}
 function Portfolio() {
   return /*#__PURE__*/React.createElement("section", {
     id: "portfolio"
-  }, /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("h2", null, "Under Construction.."), /*#__PURE__*/React.createElement("p", null, "Eventually, this website will act as a hub for programming projects I have worked on, essays that I am especially proud of, and potentially more. For now, enjoy my face."));
+  }, /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("h2", null, "Under Construction.."), /*#__PURE__*/React.createElement("p", null, "Eventually, this website will act as a hub for programming projects I have worked on, essays that I am especially proud of, and potentially more. For now, enjoy my face on the 'About' tab."));
 }
 {/* "Essays" portion of the webpage, TBA. */}
 function Essays() {
   return /*#__PURE__*/React.createElement("section", {
     id: "essays"
-  }, /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("h2", null, "Under Construction.."), /*#__PURE__*/React.createElement("p", null, "Eventually, this website will act as a hub for programming projects I have worked on, essays that I am especially proud of, and potentially more. For now, enjoy my face."));
+  }, /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("h2", null, "Under Construction.."), /*#__PURE__*/React.createElement("p", null, "Eventually, this website will act as a hub for programming projects I have worked on, essays that I am especially proud of, and potentially more. For now, enjoy my face on the 'About' tab."));
 }
 {/* Main function used to determine the <main> body of the SPA, depending on the active nav bar selection */}
 function Main(props) {
