@@ -28,7 +28,7 @@ function Header(props) {
     height: "20",
     width: "20"
   }))), /*#__PURE__*/React.createElement("li", null, /*#__PURE__*/React.createElement("a", {
-    href: "",
+    href: "#intro",
     onClick: function onClick() {
       return handleClick("intro");
     }
@@ -100,7 +100,7 @@ function App() {
    '[]' as our second argument tells React to only mount this function once, as it is only required for an initial load. */}
   React.useEffect(function () {
     var hash = window.location.hash.substring(1);
-    if (["about", "projects", "essays"].includes(hash)) {
+    if (["intro", "about", "projects", "essays"].includes(hash)) {
       setActivePage(hash);
     }
   }, []);

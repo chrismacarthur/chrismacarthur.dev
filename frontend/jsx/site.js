@@ -17,7 +17,7 @@ function Header(props) {
               <img src="/images/linkedin.png" alt="LinkedIn" height="20" width="20" />
             </a>
           </li>
-          <li><a href="" onClick={() => handleClick("intro")}>Home</a></li>
+          <li><a href="#intro" onClick={() => handleClick("intro")}>Home</a></li>
           <li><a href="#about" onClick={() => handleClick("about")}>About</a></li>
           <li><a href="#projects" onClick={() => handleClick("projects")}>Projects</a></li>
           <li><a href="#essays" onClick={() => handleClick("essays")}>Essays</a></li>
@@ -126,7 +126,7 @@ function App() {
   '[]' as our second argument tells React to only mount this function once, as it is only required for an initial load. */}
   React.useEffect(() => {
     const hash = window.location.hash.substring(1);
-    if (["about", "projects", "essays"].includes(hash)) {
+    if (["intro", "about", "projects", "essays"].includes(hash)) {
       setActivePage(hash);
     }
   }, []);
