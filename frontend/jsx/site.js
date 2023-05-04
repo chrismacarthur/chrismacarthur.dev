@@ -17,26 +17,53 @@ function Header(props) {
               <img src="/images/linkedin.png" alt="LinkedIn" height="20" width="20" />
             </a>
           </li>
-          <li id="nav-title">chrismacarthur.dev</li>
-          <li><a href="#about-me" onClick={() => handleClick("about")}>About</a></li>
-          <li><a href="#portfolio" onClick={() => handleClick("portfolio")}>Projects</a></li>
+          <li><a href="" onClick={() => handleClick("intro")}>Home</a></li>
+          <li><a href="#about" onClick={() => handleClick("about")}>About</a></li>
+          <li><a href="#projects" onClick={() => handleClick("projects")}>Projects</a></li>
           <li><a href="#essays" onClick={() => handleClick("essays")}>Essays</a></li>
+          <li id="breaker"></li>
+          <li id="nav-title">chrismacarthur.dev</li>
         </ul>
       </nav>
     </header>
   );
 }
 
+{/* "Intro" portion of the webpage, outlines the website's purpose and displays a portrait. */}
+function Intro() {
+  return (
+    <section id="intro">
+      <h2>Welcome!</h2>
+      <p>
+        I'm Chris, and thanks for checking out my website. Here, you'll find details on some of the programming projects I've worked on, 
+        previews of my writing, and some general details about what I'm interested in.
+      </p>
+    </section>
+  );
+}
 
-{/* "AboutMe" portion of the webpage, outlines the contetns of a short biography and a portrait. */}
+
+{/* "About" portion of the webpage, containing a short biography and a portrait. */}
 function AboutMe() {
   return (
-    <section id="about-me">
+    <section id="about">
       <h2>About Me</h2>
       <img id="portrait" src="/images/portrait.png" alt="portrait" />
       <p>
-        Hey! My name is Chris MacArthur, I recently completed my Bachelor of Computer Science degree 
-        from The University of New Brunswick.
+        Hi! I'm Chris MacArthur. I recently completed my Bachelor of Computer Science degree 
+        from the University of New Brunswick, and I'm looking forward to whatever challenge awaits me next.<br/><br/>
+        Here's a few things I enjoy:
+        <dl>
+          <dt><b>Software-Related Interests:</b></dt>
+          <dd>Full-stack development and projects that involve end-to-end invention, like this website!</dd>
+          <dd>Software security, studying threat prevention, and keeping up-to-date with the latest 
+            cybersecurity advancements.
+          </dd>
+          <dd>Working with data sets and accessing public APIs to craft personal applets.<br/><br/></dd>
+          <dt><b>Hobbies and Other Interests:</b></dt>
+          <dd>Listening to music, collecting vinyl records, and documenting lesser known musical work.</dd>
+          <dd>Reading fiction, writing non-fiction, and all things in the realm of investigative journalism.</dd>
+        </dl>
       </p>
     </section>
   );
@@ -44,15 +71,13 @@ function AboutMe() {
 
 
 {/* "Portfolio" portion of the webpage, TBA. */}
-function Portfolio() {
+function Projects() {
   return (
-    <section id="portfolio">
-      <br /><br /><br /><br /><br /><br />
+    <section id="projects">
       <h2>Under Construction..</h2>
       <p>
         Eventually, this website will act as a hub for programming projects I have worked on, essays 
-        that I am especially proud of, and potentially more. For now, enjoy my face on the 
-        'About' tab.
+        that I am especially proud of, and more. Stay posted!
       </p>
     </section>
   );
@@ -63,12 +88,10 @@ function Portfolio() {
 function Essays() {
   return (
     <section id="essays">
-      <br /><br /><br /><br /><br /><br />
       <h2>Under Construction..</h2>
       <p>
         Eventually, this website will act as a hub for programming projects I have worked on, essays 
-        that I am especially proud of, and potentially more. For now, enjoy my face on the 
-        'About' tab.
+        that I am especially proud of, and more. Stay posted!
       </p>
     </section>
   );
@@ -78,8 +101,9 @@ function Essays() {
 function Main(props) {
   return (
     <main>
+      {props.activePage === "intro" && <Intro />}
       {props.activePage === "about" && <AboutMe />}
-      {props.activePage === "portfolio" && <Portfolio />}
+      {props.activePage === "projects" && <Projects />}
       {props.activePage === "essays" && <Essays />}
     </main>
   );
@@ -94,7 +118,19 @@ function Footer() {
 
 {/* The central function used to construct the active web components. Responds to props.activePage. */}
 function App() {
-  const [activePage, setActivePage] = React.useState("about");
+
+  {/* Sets the default <Main> content to the Intro function (loading from base URL 'https://chrismacarthur.dev/'). */}
+  const [activePage, setActivePage] = React.useState("intro");
+
+  {/* Checks the hash portion of the URL (#portfolio) to set the appropriate content when loading from section.
+  '[]' as our second argument tells React to only mount this function once, as it is only required for an initial load. */}
+  React.useEffect(() => {
+    const hash = window.location.hash.substring(1);
+    if (["about", "projects", "essays"].includes(hash)) {
+      setActivePage(hash);
+    }
+  }, []);
+
   return (
     <div>
       <Header setActivePage={setActivePage} />

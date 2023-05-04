@@ -27,50 +27,63 @@ function Header(props) {
     alt: "LinkedIn",
     height: "20",
     width: "20"
-  }))), /*#__PURE__*/React.createElement("li", {
-    id: "nav-title"
-  }, "chrismacarthur.dev"), /*#__PURE__*/React.createElement("li", null, /*#__PURE__*/React.createElement("a", {
-    href: "#about-me",
+  }))), /*#__PURE__*/React.createElement("li", null, /*#__PURE__*/React.createElement("a", {
+    href: "",
+    onClick: function onClick() {
+      return handleClick("intro");
+    }
+  }, "Home")), /*#__PURE__*/React.createElement("li", null, /*#__PURE__*/React.createElement("a", {
+    href: "#about",
     onClick: function onClick() {
       return handleClick("about");
     }
   }, "About")), /*#__PURE__*/React.createElement("li", null, /*#__PURE__*/React.createElement("a", {
-    href: "#portfolio",
+    href: "#projects",
     onClick: function onClick() {
-      return handleClick("portfolio");
+      return handleClick("projects");
     }
   }, "Projects")), /*#__PURE__*/React.createElement("li", null, /*#__PURE__*/React.createElement("a", {
     href: "#essays",
     onClick: function onClick() {
       return handleClick("essays");
     }
-  }, "Essays")))));
+  }, "Essays")), /*#__PURE__*/React.createElement("li", {
+    id: "breaker"
+  }), /*#__PURE__*/React.createElement("li", {
+    id: "nav-title"
+  }, "chrismacarthur.dev"))));
 }
-{/* "AboutMe" portion of the webpage, outlines the contetns of a short biography and a portrait. */}
+{/* "Intro" portion of the webpage, outlines the website's purpose and displays a portrait. */}
+function Intro() {
+  return /*#__PURE__*/React.createElement("section", {
+    id: "intro"
+  }, /*#__PURE__*/React.createElement("h2", null, "Welcome!"), /*#__PURE__*/React.createElement("p", null, "I'm Chris, and thanks for checking out my website. Here, you'll find details on some of the programming projects I've worked on, previews of my writing, and some general details about what I'm interested in."));
+}
+{/* "About" portion of the webpage, containing a short biography and a portrait. */}
 function AboutMe() {
   return /*#__PURE__*/React.createElement("section", {
-    id: "about-me"
+    id: "about"
   }, /*#__PURE__*/React.createElement("h2", null, "About Me"), /*#__PURE__*/React.createElement("img", {
     id: "portrait",
     src: "/images/portrait.png",
     alt: "portrait"
-  }), /*#__PURE__*/React.createElement("p", null, "Hey! My name is Chris MacArthur, I recently completed my Bachelor of Computer Science degree from The University of New Brunswick."));
+  }), /*#__PURE__*/React.createElement("p", null, "Hi! I'm Chris MacArthur. I recently completed my Bachelor of Computer Science degree from the University of New Brunswick, and I'm looking forward to whatever challenge awaits me next.", /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("br", null), "Here's a few things I enjoy:", /*#__PURE__*/React.createElement("dl", null, /*#__PURE__*/React.createElement("dt", null, /*#__PURE__*/React.createElement("b", null, "Software-Related Interests:")), /*#__PURE__*/React.createElement("dd", null, "Full-stack development and projects that involve end-to-end invention, like this website!"), /*#__PURE__*/React.createElement("dd", null, "Software security, studying threat prevention, and keeping up-to-date with the latest cybersecurity advancements."), /*#__PURE__*/React.createElement("dd", null, "Working with data sets and accessing public APIs to craft personal applets.", /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("br", null)), /*#__PURE__*/React.createElement("dt", null, /*#__PURE__*/React.createElement("b", null, "Hobbies and Other Interests:")), /*#__PURE__*/React.createElement("dd", null, "Listening to music, collecting vinyl records, and documenting lesser known musical work."), /*#__PURE__*/React.createElement("dd", null, "Reading fiction, writing non-fiction, and all things in the realm of investigative journalism."))));
 }
 {/* "Portfolio" portion of the webpage, TBA. */}
-function Portfolio() {
+function Projects() {
   return /*#__PURE__*/React.createElement("section", {
-    id: "portfolio"
-  }, /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("h2", null, "Under Construction.."), /*#__PURE__*/React.createElement("p", null, "Eventually, this website will act as a hub for programming projects I have worked on, essays that I am especially proud of, and potentially more. For now, enjoy my face on the 'About' tab."));
+    id: "projects"
+  }, /*#__PURE__*/React.createElement("h2", null, "Under Construction.."), /*#__PURE__*/React.createElement("p", null, "Eventually, this website will act as a hub for programming projects I have worked on, essays that I am especially proud of, and more. Stay posted!"));
 }
 {/* "Essays" portion of the webpage, TBA. */}
 function Essays() {
   return /*#__PURE__*/React.createElement("section", {
     id: "essays"
-  }, /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("h2", null, "Under Construction.."), /*#__PURE__*/React.createElement("p", null, "Eventually, this website will act as a hub for programming projects I have worked on, essays that I am especially proud of, and potentially more. For now, enjoy my face on the 'About' tab."));
+  }, /*#__PURE__*/React.createElement("h2", null, "Under Construction.."), /*#__PURE__*/React.createElement("p", null, "Eventually, this website will act as a hub for programming projects I have worked on, essays that I am especially proud of, and more. Stay posted!"));
 }
 {/* Main function used to determine the <main> body of the SPA, depending on the active nav bar selection */}
 function Main(props) {
-  return /*#__PURE__*/React.createElement("main", null, props.activePage === "about" && /*#__PURE__*/React.createElement(AboutMe, null), props.activePage === "portfolio" && /*#__PURE__*/React.createElement(Portfolio, null), props.activePage === "essays" && /*#__PURE__*/React.createElement(Essays, null));
+  return /*#__PURE__*/React.createElement("main", null, props.activePage === "intro" && /*#__PURE__*/React.createElement(Intro, null), props.activePage === "about" && /*#__PURE__*/React.createElement(AboutMe, null), props.activePage === "projects" && /*#__PURE__*/React.createElement(Projects, null), props.activePage === "essays" && /*#__PURE__*/React.createElement(Essays, null));
 }
 {/* Outlines a short footer, for styling purposes. */}
 function Footer() {
@@ -78,10 +91,19 @@ function Footer() {
 }
 {/* The central function used to construct the active web components. Responds to props.activePage. */}
 function App() {
-  var _React$useState = React.useState("about"),
+  {/* Sets the default <Main> content to the Intro function (loading from base URL 'https://chrismacarthur.dev/'). */}
+  var _React$useState = React.useState("intro"),
     _React$useState2 = _slicedToArray(_React$useState, 2),
     activePage = _React$useState2[0],
     setActivePage = _React$useState2[1];
+  {/* Checks the hash portion of the URL (#portfolio) to set the appropriate content when loading from section.
+   '[]' as our second argument tells React to only mount this function once, as it is only required for an initial load. */}
+  React.useEffect(function () {
+    var hash = window.location.hash.substring(1);
+    if (["about", "projects", "essays"].includes(hash)) {
+      setActivePage(hash);
+    }
+  }, []);
   return /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement(Header, {
     setActivePage: setActivePage
   }), /*#__PURE__*/React.createElement(Main, {
