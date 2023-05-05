@@ -18,10 +18,6 @@ const fs = require("fs") // Node.js file system API.
 // Connects path to frontend (where index.html will be found and served by default).
 app.use(express.static(path.join(__dirname, "..", "frontend")));
 
-// Connects path to the required React dependencies that will be utilized in the front end.
-app.use("/backend/node_modules/react/umd/react.production.min.js", express.static(path.join(__dirname, "node_modules/react/umd/react.production.min.js")));
-app.use("/backend/node_modules/react-dom/umd/react-dom.production.min.js", express.static(path.join(__dirname, "node_modules/react-dom/umd/react-dom.production.min.js")));
-
 // Sample endpoint TBD.
 app.get("/hi", (req, res) => { 
   let message = "hi buddy :)"
