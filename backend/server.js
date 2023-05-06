@@ -37,7 +37,7 @@ app.get("*", (req, res) => {
  * INITIATION
  */
 
-// Initiates the server: HTTP for PROD, HTTPS for DEV.
+// Initiates the server: HTTPS for PROD, HTTP for DEV.
 let server, port;
 if (process.env.NODE_ENV === "production") {
   const credentials = { // SSL certificate
