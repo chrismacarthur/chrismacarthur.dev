@@ -17,6 +17,10 @@ header {
 #breaker {
   padding-left: 35%;
 }
+
+hr.divider {
+  border-top: 2px solid #bbb;
+}
   
 #nav-title {
   padding-top: 5px;
@@ -90,6 +94,41 @@ h2 {
   font-size: 48px;
   text-align: left;
   display: block;
+}
+
+#intro h3 {
+  font-weight: normal;
+  max-width: 800px;
+  margin-top: 30px;
+  font-size: 40px;
+  text-align: left;
+}
+
+#intro h4 {
+  font-weight: normal;
+  max-width: 800px;
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-bottom: 5px;
+  font-size: 28px;
+  text-align: left;
+  display: block;
+}
+
+#intro h5 {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: normal;
+  max-width: 800px;
+  margin-top: 0px;
+  margin-left: 40px;
+  font-size: 16px;
+  color: #3b3b3b;
+  text-align: left;
+  display: block;
+}
+
+#intro p {
+  margin-left: 40px;
 }
   
 p {

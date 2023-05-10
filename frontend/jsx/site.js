@@ -35,8 +35,51 @@ function Intro() {
     <section id="intro">
       <h2>Welcome!</h2>
       <p>
-        I'm Chris, and thanks for checking out my website. Here, you'll find details on some of the programming projects I've worked on, 
+        I'm Chris, thanks for checking out my website! Here, you'll find details on some of the programming projects I've worked on, 
         previews of my writing, and some general details about what I'm interested in.
+      </p>
+      <hr class="divider"></hr>
+      <h3>Previous Roles</h3>
+      <h4>Application Developer</h4>
+      <h5>Internship</h5>
+      <p>
+        Deployed a full-scale .NET web application, collaborated with internal clients to meet software requirements, 
+        and adapted to evolving priorities.
+        <br/>
+        <br/>
+        <b>Languages used:</b>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>C#</li>
+        </ul>
+        <b>Skills used:</b>
+        <ul>
+          <li>Communication</li>
+          <li>Time management</li>
+          <li>Adaptability</li>
+        </ul>
+      </p>
+      <h4>Information Management Specialist</h4>
+      <h5>Internship</h5>
+      <p>
+        Assisted in the migration of legacy data storage systems to Microsoft SharePoint, sharing recommendations 
+        and ensuring retention guidelines remained in place.
+        <br/>
+        <br/>
+        <b>Languages used:</b>
+        <ul>
+          <li>Powershell</li>
+          <li>SQL</li>
+          <li>Power Query</li>
+        </ul>
+        <b>Skills used:</b>
+        <ul>
+          <li>Leadership</li>
+          <li>Business requirements</li>
+          <li>Data analytics</li>
+        </ul>
       </p>
     </section>
   );
