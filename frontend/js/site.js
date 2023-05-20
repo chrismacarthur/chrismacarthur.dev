@@ -55,11 +55,41 @@ function Header(props) {
 }
 {/* "Intro" portion of the webpage, outlines the website's purpose and displays a portrait. */}
 function Intro() {
+  var _React$useState = React.useState(false),
+    _React$useState2 = _slicedToArray(_React$useState, 2),
+    isAppDevActive = _React$useState2[0],
+    setIsAppDevActive = _React$useState2[1];
+  var _React$useState3 = React.useState(false),
+    _React$useState4 = _slicedToArray(_React$useState3, 2),
+    isIMActive = _React$useState4[0],
+    setIsIMActive = _React$useState4[1];
+  var toggleAppDevCollapse = function toggleAppDevCollapse() {
+    setIsAppDevActive(!isAppDevActive);
+  };
+  var toggleIMCollapse = function toggleIMCollapse() {
+    setIsIMActive(!isIMActive);
+  };
   return /*#__PURE__*/React.createElement("section", {
     id: "intro"
   }, /*#__PURE__*/React.createElement("h2", null, "Welcome!"), /*#__PURE__*/React.createElement("p", null, "I'm Chris, thanks for checking out my website! Here, you'll find details on some of the programming projects I've worked on, previews of my writing, and some general details about what I'm interested in."), /*#__PURE__*/React.createElement("hr", {
-    "class": "divider"
-  }), /*#__PURE__*/React.createElement("h3", null, "Previous Roles"), /*#__PURE__*/React.createElement("h4", null, "Application Developer"), /*#__PURE__*/React.createElement("h5", null, "Internship"), /*#__PURE__*/React.createElement("p", null, "Deployed a full-scale .NET web application, collaborated with internal clients to meet software requirements, and adapted to evolving priorities.", /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("b", null, "Languages used:"), /*#__PURE__*/React.createElement("ul", null, /*#__PURE__*/React.createElement("li", null, "HTML"), /*#__PURE__*/React.createElement("li", null, "CSS"), /*#__PURE__*/React.createElement("li", null, "JavaScript"), /*#__PURE__*/React.createElement("li", null, "C#")), /*#__PURE__*/React.createElement("b", null, "Skills used:"), /*#__PURE__*/React.createElement("ul", null, /*#__PURE__*/React.createElement("li", null, "Communication"), /*#__PURE__*/React.createElement("li", null, "Time management"), /*#__PURE__*/React.createElement("li", null, "Adaptability"))), /*#__PURE__*/React.createElement("h4", null, "Information Management Specialist"), /*#__PURE__*/React.createElement("h5", null, "Internship"), /*#__PURE__*/React.createElement("p", null, "Assisted in the migration of legacy data storage systems to Microsoft SharePoint, sharing recommendations and ensuring retention guidelines remained in place.", /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("b", null, "Languages used:"), /*#__PURE__*/React.createElement("ul", null, /*#__PURE__*/React.createElement("li", null, "Powershell"), /*#__PURE__*/React.createElement("li", null, "SQL"), /*#__PURE__*/React.createElement("li", null, "Power Query")), /*#__PURE__*/React.createElement("b", null, "Skills used:"), /*#__PURE__*/React.createElement("ul", null, /*#__PURE__*/React.createElement("li", null, "Leadership"), /*#__PURE__*/React.createElement("li", null, "Business requirements"), /*#__PURE__*/React.createElement("li", null, "Data analytics"))));
+    className: "divider"
+  }), /*#__PURE__*/React.createElement("h3", null, "Previous Roles"), /*#__PURE__*/React.createElement("h4", {
+    onClick: toggleAppDevCollapse,
+    className: isAppDevActive ? "active" : "",
+    style: {
+      cursor: "pointer"
+    }
+  }, "Application Developer", isAppDevActive ? /*#__PURE__*/React.createElement("span", null, " \u25BC") : /*#__PURE__*/React.createElement("span", null, " \u25B2")), /*#__PURE__*/React.createElement("div", {
+    className: "collapsible-content ".concat(isAppDevActive ? "active" : "")
+  }, /*#__PURE__*/React.createElement("h5", null, "Internship"), /*#__PURE__*/React.createElement("p", null, "Deployed a full-scale .NET web application, collaborated with internal clients to meet software requirements, and adapted to evolving priorities.", /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("b", null, "Languages used:"), /*#__PURE__*/React.createElement("ul", null, /*#__PURE__*/React.createElement("li", null, "HTML"), /*#__PURE__*/React.createElement("li", null, "CSS"), /*#__PURE__*/React.createElement("li", null, "JavaScript"), /*#__PURE__*/React.createElement("li", null, "C#")), /*#__PURE__*/React.createElement("b", null, "Skills used:"), /*#__PURE__*/React.createElement("ul", null, /*#__PURE__*/React.createElement("li", null, "Communication"), /*#__PURE__*/React.createElement("li", null, "Time management"), /*#__PURE__*/React.createElement("li", null, "Adaptability")))), /*#__PURE__*/React.createElement("h4", {
+    onClick: toggleIMCollapse,
+    className: isIMActive ? "active" : "",
+    style: {
+      cursor: "pointer"
+    }
+  }, "Information Management Specialist", isIMActive ? /*#__PURE__*/React.createElement("span", null, " \u25BC") : /*#__PURE__*/React.createElement("span", null, " \u25B2")), /*#__PURE__*/React.createElement("div", {
+    className: "collapsible-content ".concat(isIMActive ? "active" : "")
+  }, /*#__PURE__*/React.createElement("h5", null, "Internship"), /*#__PURE__*/React.createElement("p", null, "Assisted in the migration of legacy data storage systems to Microsoft SharePoint, sharing recommendations and ensuring retention guidelines remained in place.", /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("b", null, "Languages used:"), /*#__PURE__*/React.createElement("ul", null, /*#__PURE__*/React.createElement("li", null, "Powershell"), /*#__PURE__*/React.createElement("li", null, "SQL"), /*#__PURE__*/React.createElement("li", null, "Power Query")), /*#__PURE__*/React.createElement("b", null, "Skills used:"), /*#__PURE__*/React.createElement("ul", null, /*#__PURE__*/React.createElement("li", null, "Leadership"), /*#__PURE__*/React.createElement("li", null, "Business requirements"), /*#__PURE__*/React.createElement("li", null, "Data analytics")))));
 }
 {/* "About" portion of the webpage, containing a short biography and a portrait. */}
 function AboutMe() {
@@ -94,10 +124,10 @@ function Footer() {
 {/* The central function used to construct the active web components. Responds to props.activePage. */}
 function App() {
   {/* Sets the default <Main> content to the Intro function (loading from base URL 'https://chrismacarthur.dev/'). */}
-  var _React$useState = React.useState("intro"),
-    _React$useState2 = _slicedToArray(_React$useState, 2),
-    activePage = _React$useState2[0],
-    setActivePage = _React$useState2[1];
+  var _React$useState5 = React.useState("intro"),
+    _React$useState6 = _slicedToArray(_React$useState5, 2),
+    activePage = _React$useState6[0],
+    setActivePage = _React$useState6[1];
   {/* Checks the hash portion of the URL (#portfolio) to set the appropriate content when loading from section.
    '[]' as our second argument tells React to only mount this function once, as it is only required for an initial load. */}
   React.useEffect(function () {

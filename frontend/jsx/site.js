@@ -29,8 +29,19 @@ function Header(props) {
   );
 }
 
-{/* "Intro" portion of the webpage, outlines the website's purpose and displays a portrait. */}
+{/* "Intro" portion of the webpage, outlines the website's purpose. */}
 function Intro() {
+  const [isAppDevActive, setIsAppDevActive] = React.useState(false);
+  const [isIMActive, setIsIMActive] = React.useState(false);
+
+  const toggleAppDevCollapse = () => {
+    setIsAppDevActive(!isAppDevActive);
+  };
+
+  const toggleIMCollapse = () => {
+    setIsIMActive(!isIMActive);
+  };
+
   return (
     <section id="intro">
       <h2>Welcome!</h2>
@@ -38,52 +49,73 @@ function Intro() {
         I'm Chris, thanks for checking out my website! Here, you'll find details on some of the programming projects I've worked on, 
         previews of my writing, and some general details about what I'm interested in.
       </p>
-      <hr class="divider"></hr>
+      <hr className="divider" />
+
       <h3>Previous Roles</h3>
-      <h4>Application Developer</h4>
-      <h5>Internship</h5>
-      <p>
-        Deployed a full-scale .NET web application, collaborated with internal clients to meet software requirements, 
-        and adapted to evolving priorities.
-        <br/>
-        <br/>
-        <b>Languages used:</b>
-        <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-          <li>C#</li>
-        </ul>
-        <b>Skills used:</b>
-        <ul>
-          <li>Communication</li>
-          <li>Time management</li>
-          <li>Adaptability</li>
-        </ul>
-      </p>
-      <h4>Information Management Specialist</h4>
-      <h5>Internship</h5>
-      <p>
-        Assisted in the migration of legacy data storage systems to Microsoft SharePoint, sharing recommendations 
-        and ensuring retention guidelines remained in place.
-        <br/>
-        <br/>
-        <b>Languages used:</b>
-        <ul>
-          <li>Powershell</li>
-          <li>SQL</li>
-          <li>Power Query</li>
-        </ul>
-        <b>Skills used:</b>
-        <ul>
-          <li>Leadership</li>
-          <li>Business requirements</li>
-          <li>Data analytics</li>
-        </ul>
-      </p>
+
+      <h4
+        onClick={toggleAppDevCollapse}
+        className={isAppDevActive ? "active" : ""}
+        style={{ cursor: "pointer" }}
+      >
+        Application Developer
+        {isAppDevActive ? <span> ▼</span> : <span> ▲</span>}
+      </h4>
+      <div className={`collapsible-content ${isAppDevActive ? "active" : ""}`}>
+        <h5>Internship</h5>
+        <p>
+          Deployed a full-scale .NET web application, collaborated with internal clients to meet software requirements,
+          and adapted to evolving priorities.
+          <br />
+          <br />
+          <b>Languages used:</b>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>C#</li>
+          </ul>
+          <b>Skills used:</b>
+          <ul>
+            <li>Communication</li>
+            <li>Time management</li>
+            <li>Adaptability</li>
+          </ul>
+        </p>
+      </div>
+      <h4
+        onClick={toggleIMCollapse}
+        className={isIMActive ? "active" : ""}
+        style={{ cursor: "pointer" }}
+      >
+        Information Management Specialist
+        {isIMActive ? <span> ▼</span> : <span> ▲</span>}
+      </h4>
+      <div className={`collapsible-content ${isIMActive ? "active" : ""}`}>
+        <h5>Internship</h5>
+        <p>
+          Assisted in the migration of legacy data storage systems to Microsoft SharePoint, sharing recommendations
+          and ensuring retention guidelines remained in place.
+          <br />
+          <br />
+          <b>Languages used:</b>
+          <ul>
+            <li>Powershell</li>
+            <li>SQL</li>
+            <li>Power Query</li>
+          </ul>
+          <b>Skills used:</b>
+          <ul>
+            <li>Leadership</li>
+            <li>Business requirements</li>
+            <li>Data analytics</li>
+          </ul>
+        </p>
+      </div>
     </section>
   );
 }
+
 
 
 {/* "About" portion of the webpage, containing a short biography and a portrait. */}

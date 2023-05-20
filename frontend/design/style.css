@@ -3,7 +3,7 @@ body {
   font-family: Tahoma, Geneva, Verdana, sans-serif;;
   font-size: 16px;
   color: #333;
-  background-color: #d3d3d3;
+  background-color: #e7e7e7;
 }
   
 header {
@@ -100,14 +100,19 @@ h2 {
   font-weight: normal;
   max-width: 800px;
   margin-top: 30px;
+  margin-bottom: 15px;
   font-size: 40px;
   text-align: left;
 }
 
+#intro h3.active {
+  margin-bottom: 15px;
+}
+
 #intro h4 {
   font-weight: normal;
-  max-width: 800px;
-  margin-top: 30px;
+  max-width: max-content;
+  margin-top: 10px;
   margin-left: 30px;
   margin-bottom: 5px;
   font-size: 28px;
@@ -121,6 +126,7 @@ h2 {
   max-width: 800px;
   margin-top: 0px;
   margin-left: 40px;
+  margin-bottom: 5px;
   font-size: 16px;
   color: #3b3b3b;
   text-align: left;
@@ -128,6 +134,7 @@ h2 {
 }
 
 #intro p {
+  margin-top: 8px;
   margin-left: 40px;
 }
   
@@ -145,12 +152,24 @@ p {
   border-radius: 10px;
 }
 
-footer {
-  background-color: #000;
-  padding: 20px;
-}
-
 @keyframes fade {
   0% { opacity: 0; }
   100% { opacity: 1; }
+}
+
+.collapsible-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.collapsible-content.active {
+  max-height: 1000px;
+}
+
+footer {
+  background-color: #000;
+  margin-top: 20px;
+  padding: 20px;
+  position: sticky;
 }
