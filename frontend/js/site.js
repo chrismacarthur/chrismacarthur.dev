@@ -53,7 +53,7 @@ function Header(props) {
     id: "nav-title"
   }, "chrismacarthur.dev"))));
 }
-{/* "Intro" portion of the webpage, outlines the website's purpose and displays a portrait. */}
+{/* "Intro" portion of the webpage, outlines the website's purpose. */}
 function Intro() {
   var _React$useState = React.useState(false),
     _React$useState2 = _slicedToArray(_React$useState, 2),
@@ -79,7 +79,7 @@ function Intro() {
     style: {
       cursor: "pointer"
     }
-  }, "Application Developer", isAppDevActive ? /*#__PURE__*/React.createElement("span", null, " \u25BC") : /*#__PURE__*/React.createElement("span", null, " \u25B2")), /*#__PURE__*/React.createElement("div", {
+  }, "Application Developer", isAppDevActive ? /*#__PURE__*/React.createElement("span", null, " \u25B2") : /*#__PURE__*/React.createElement("span", null, " \u25BC")), /*#__PURE__*/React.createElement("div", {
     className: "collapsible-content ".concat(isAppDevActive ? "active" : "")
   }, /*#__PURE__*/React.createElement("h5", null, "Internship"), /*#__PURE__*/React.createElement("p", null, "Deployed a full-scale .NET web application, collaborated with internal clients to meet software requirements, and adapted to evolving priorities.", /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("b", null, "Languages used:"), /*#__PURE__*/React.createElement("ul", null, /*#__PURE__*/React.createElement("li", null, "HTML"), /*#__PURE__*/React.createElement("li", null, "CSS"), /*#__PURE__*/React.createElement("li", null, "JavaScript"), /*#__PURE__*/React.createElement("li", null, "C#")), /*#__PURE__*/React.createElement("b", null, "Skills used:"), /*#__PURE__*/React.createElement("ul", null, /*#__PURE__*/React.createElement("li", null, "Communication"), /*#__PURE__*/React.createElement("li", null, "Time management"), /*#__PURE__*/React.createElement("li", null, "Adaptability")))), /*#__PURE__*/React.createElement("h4", {
     onClick: toggleIMCollapse,
@@ -87,7 +87,7 @@ function Intro() {
     style: {
       cursor: "pointer"
     }
-  }, "Information Management Specialist", isIMActive ? /*#__PURE__*/React.createElement("span", null, " \u25BC") : /*#__PURE__*/React.createElement("span", null, " \u25B2")), /*#__PURE__*/React.createElement("div", {
+  }, "Information Management Specialist", isIMActive ? /*#__PURE__*/React.createElement("span", null, " \u25B2") : /*#__PURE__*/React.createElement("span", null, " \u25BC")), /*#__PURE__*/React.createElement("div", {
     className: "collapsible-content ".concat(isIMActive ? "active" : "")
   }, /*#__PURE__*/React.createElement("h5", null, "Internship"), /*#__PURE__*/React.createElement("p", null, "Assisted in the migration of legacy data storage systems to Microsoft SharePoint, sharing recommendations and ensuring retention guidelines remained in place.", /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("b", null, "Languages used:"), /*#__PURE__*/React.createElement("ul", null, /*#__PURE__*/React.createElement("li", null, "Powershell"), /*#__PURE__*/React.createElement("li", null, "SQL"), /*#__PURE__*/React.createElement("li", null, "Power Query")), /*#__PURE__*/React.createElement("b", null, "Skills used:"), /*#__PURE__*/React.createElement("ul", null, /*#__PURE__*/React.createElement("li", null, "Leadership"), /*#__PURE__*/React.createElement("li", null, "Business requirements"), /*#__PURE__*/React.createElement("li", null, "Data analytics")))));
 }

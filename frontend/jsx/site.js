@@ -59,7 +59,7 @@ function Intro() {
         style={{ cursor: "pointer" }}
       >
         Application Developer
-        {isAppDevActive ? <span> ▼</span> : <span> ▲</span>}
+        {isAppDevActive ? <span> ▲</span> : <span> ▼</span>}
       </h4>
       <div className={`collapsible-content ${isAppDevActive ? "active" : ""}`}>
         <h5>Internship</h5>
@@ -89,7 +89,7 @@ function Intro() {
         style={{ cursor: "pointer" }}
       >
         Information Management Specialist
-        {isIMActive ? <span> ▼</span> : <span> ▲</span>}
+        {isIMActive ? <span> ▲</span> : <span> ▼</span>}
       </h4>
       <div className={`collapsible-content ${isIMActive ? "active" : ""}`}>
         <h5>Internship</h5>
