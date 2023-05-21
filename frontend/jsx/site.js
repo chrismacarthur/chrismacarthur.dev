@@ -29,8 +29,10 @@ function Header(props) {
   );
 }
 
-{/* "Intro" portion of the webpage, outlines the website's purpose. */}
+{/* "Intro" portion of the webpage, outlines the website's purpose and previous roles. */}
 function Intro() {
+
+  {/* State variables to track the status of previous role content. */}
   const [isAppDevActive, setIsAppDevActive] = React.useState(false);
   const [isIMActive, setIsIMActive] = React.useState(false);
 
@@ -46,22 +48,21 @@ function Intro() {
     <section id="intro">
       <h2>Welcome!</h2>
       <p>
-        I'm Chris, thanks for checking out my website! Here, you'll find details on some of the programming projects I've worked on, 
+        I'm Chris, thanks for checking out my website! Here, you'll find details on some of the programming projects I've worked on,
         previews of my writing, and some general details about what I'm interested in.
       </p>
       <hr className="divider" />
 
       <h3>Previous Roles</h3>
-
       <h4
         onClick={toggleAppDevCollapse}
         className={isAppDevActive ? "active" : ""}
         style={{ cursor: "pointer" }}
       >
         Application Developer
-        {isAppDevActive ? <span> ▲</span> : <span> ▼</span>}
+        <span className={`arrow ${isAppDevActive ? "up" : "down"}`}></span>
       </h4>
-      <div className={`collapsible-content ${isAppDevActive ? "active" : ""}`}>
+      <div className={`role-content ${isAppDevActive ? "active" : ""}`}>
         <h5>Internship</h5>
         <p>
           Deployed a full-scale .NET web application, collaborated with internal clients to meet software requirements,
@@ -89,9 +90,9 @@ function Intro() {
         style={{ cursor: "pointer" }}
       >
         Information Management Specialist
-        {isIMActive ? <span> ▲</span> : <span> ▼</span>}
+        <span className={`arrow ${isIMActive ? "up" : "down"}`}></span>
       </h4>
-      <div className={`collapsible-content ${isIMActive ? "active" : ""}`}>
+      <div className={`role-content ${isIMActive ? "active" : ""}`}>
         <h5>Internship</h5>
         <p>
           Assisted in the migration of legacy data storage systems to Microsoft SharePoint, sharing recommendations
@@ -115,6 +116,7 @@ function Intro() {
     </section>
   );
 }
+
 
 
 
