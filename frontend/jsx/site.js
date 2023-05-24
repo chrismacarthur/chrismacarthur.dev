@@ -129,7 +129,7 @@ function AboutMe() {
       <p>
         Hi! I'm Chris MacArthur. I recently completed my Bachelor of Computer Science degree 
         from the University of New Brunswick, and I'm looking forward to whatever challenge awaits me next.<br/><br/>
-        Here's a few things I enjoy:
+        Here are a few things I enjoy:
         <dl>
           <dt><b>Software-Related Interests:</b></dt>
           <dd>Full-stack development and projects that involve end-to-end invention, like this website!</dd>
@@ -153,8 +153,7 @@ function Projects() {
     <section id="projects">
       <h2>Under Construction..</h2>
       <p>
-        Eventually, this website will act as a hub for programming projects I have worked on, essays 
-        that I am especially proud of, and more. Stay posted!
+        Eventually, this section will act as a hub for programming projects I've worked on. Stay posted!
       </p>
     </section>
   );
@@ -165,11 +164,15 @@ function Projects() {
 function Essays() {
   return (
     <section id="essays">
-      <h2>Under Construction..</h2>
-      <p>
-        Eventually, this website will act as a hub for programming projects I have worked on, essays 
-        that I am especially proud of, and more. Stay posted!
-      </p>
+      <h2>Essays</h2>
+      <div class="essay-container">
+        <div class="essay">
+          TBA
+          <div class="essay-description">
+            Coming Soon!
+          </div>
+        </div>
+      </div>
     </section>
   );
 }

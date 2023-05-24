@@ -1,13 +1,13 @@
 body {
   margin: 0;
-  font-family: Tahoma, Geneva, Verdana, sans-serif;;
+  font-family: Tahoma, Geneva, Verdana, sans-serif;
   font-size: 16px;
   color: #333;
-  background-color: #eeeeee;
+  background-color: #f5f5f5;
 }
   
 header {
-  background-color: #000;
+  background-color: #161515;
   padding: 20px;
   position: fixed;
   top: 0;
@@ -83,6 +83,7 @@ h1 {
 h2 {
   font-weight: normal;
   margin-top: 60px;
+  margin-bottom: 10px;
   font-size: 32px;
   text-align: left;
   display: block;
@@ -178,9 +179,42 @@ p {
   max-height: 1000px;
 }
 
+.essay-container {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-gap: 10px;
+}
+
+.essay {
+  background-color: #dfdfdf;
+  font-family:'Times New Roman', Times, serif;
+  font-size: 24px;
+  font-weight: bolder;
+  padding: 80px;
+  margin: 10px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  transition: all 0.1s;
+}
+
+.essay-description {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.essay:hover {
+  transform: scale(1.02);
+  filter: brightness(90%);
+}
+
+
 footer {
-  background-color: #000;
-  margin-top: 20px;
-  padding: 20px;
-  position: sticky;
+  padding: 5px;
 }

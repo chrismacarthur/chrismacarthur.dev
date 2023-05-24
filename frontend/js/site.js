@@ -104,19 +104,25 @@ function AboutMe() {
     id: "portrait",
     src: "/images/portrait.png",
     alt: "portrait"
-  }), /*#__PURE__*/React.createElement("p", null, "Hi! I'm Chris MacArthur. I recently completed my Bachelor of Computer Science degree from the University of New Brunswick, and I'm looking forward to whatever challenge awaits me next.", /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("br", null), "Here's a few things I enjoy:", /*#__PURE__*/React.createElement("dl", null, /*#__PURE__*/React.createElement("dt", null, /*#__PURE__*/React.createElement("b", null, "Software-Related Interests:")), /*#__PURE__*/React.createElement("dd", null, "Full-stack development and projects that involve end-to-end invention, like this website!"), /*#__PURE__*/React.createElement("dd", null, "Software security, studying threat prevention, and keeping up-to-date with the latest cybersecurity advancements."), /*#__PURE__*/React.createElement("dd", null, "Working with data sets and accessing public APIs to craft personal applets.", /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("br", null)), /*#__PURE__*/React.createElement("dt", null, /*#__PURE__*/React.createElement("b", null, "Hobbies and Other Interests:")), /*#__PURE__*/React.createElement("dd", null, "Listening to music, collecting vinyl records, and documenting lesser known musical work."), /*#__PURE__*/React.createElement("dd", null, "Reading fiction, writing non-fiction, and all things in the realm of investigative journalism."))));
+  }), /*#__PURE__*/React.createElement("p", null, "Hi! I'm Chris MacArthur. I recently completed my Bachelor of Computer Science degree from the University of New Brunswick, and I'm looking forward to whatever challenge awaits me next.", /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("br", null), "Here are a few things I enjoy:", /*#__PURE__*/React.createElement("dl", null, /*#__PURE__*/React.createElement("dt", null, /*#__PURE__*/React.createElement("b", null, "Software-Related Interests:")), /*#__PURE__*/React.createElement("dd", null, "Full-stack development and projects that involve end-to-end invention, like this website!"), /*#__PURE__*/React.createElement("dd", null, "Software security, studying threat prevention, and keeping up-to-date with the latest cybersecurity advancements."), /*#__PURE__*/React.createElement("dd", null, "Working with data sets and accessing public APIs to craft personal applets.", /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("br", null)), /*#__PURE__*/React.createElement("dt", null, /*#__PURE__*/React.createElement("b", null, "Hobbies and Other Interests:")), /*#__PURE__*/React.createElement("dd", null, "Listening to music, collecting vinyl records, and documenting lesser known musical work."), /*#__PURE__*/React.createElement("dd", null, "Reading fiction, writing non-fiction, and all things in the realm of investigative journalism."))));
 }
 {/* "Portfolio" portion of the webpage, TBA. */}
 function Projects() {
   return /*#__PURE__*/React.createElement("section", {
     id: "projects"
-  }, /*#__PURE__*/React.createElement("h2", null, "Under Construction.."), /*#__PURE__*/React.createElement("p", null, "Eventually, this website will act as a hub for programming projects I have worked on, essays that I am especially proud of, and more. Stay posted!"));
+  }, /*#__PURE__*/React.createElement("h2", null, "Under Construction.."), /*#__PURE__*/React.createElement("p", null, "Eventually, this section will act as a hub for programming projects I've worked on. Stay posted!"));
 }
 {/* "Essays" portion of the webpage, TBA. */}
 function Essays() {
   return /*#__PURE__*/React.createElement("section", {
     id: "essays"
-  }, /*#__PURE__*/React.createElement("h2", null, "Under Construction.."), /*#__PURE__*/React.createElement("p", null, "Eventually, this website will act as a hub for programming projects I have worked on, essays that I am especially proud of, and more. Stay posted!"));
+  }, /*#__PURE__*/React.createElement("h2", null, "Essays"), /*#__PURE__*/React.createElement("div", {
+    "class": "essay-container"
+  }, /*#__PURE__*/React.createElement("div", {
+    "class": "essay"
+  }, "TBA", /*#__PURE__*/React.createElement("div", {
+    "class": "essay-description"
+  }, "Coming Soon!"))));
 }
 {/* Main function used to determine the <main> body of the SPA, depending on the active nav bar selection */}
 function Main(props) {
