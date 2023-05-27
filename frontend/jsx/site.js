@@ -21,7 +21,6 @@ function Header(props) {
           <li><a href="#about" onClick={() => handleClick("about")}>About</a></li>
           <li><a href="#projects" onClick={() => handleClick("projects")}>Projects</a></li>
           <li><a href="#essays" onClick={() => handleClick("essays")}>Essays</a></li>
-          <li id="breaker"></li>
           <li id="nav-title">chrismacarthur.dev</li>
         </ul>
       </nav>
@@ -31,123 +30,116 @@ function Header(props) {
 
 {/* "Intro" portion of the webpage, outlines the website's purpose and previous roles. */}
 function Intro() {
-
-  {/* State variables to track the status of previous role content. */}
-  const [isAppDevActive, setIsAppDevActive] = React.useState(false);
-  const [isIMActive, setIsIMActive] = React.useState(false);
-
-  const toggleAppDevCollapse = () => {
-    setIsAppDevActive(!isAppDevActive);
-  };
-
-  const toggleIMCollapse = () => {
-    setIsIMActive(!isIMActive);
-  };
-
   return (
     <section id="intro">
       <h2>Welcome!</h2>
       <p>
-        I'm Chris, thanks for checking out my website! Here, you'll find details on some of the programming projects I've worked on,
-        previews of my writing, and some general details about what I'm interested in.
+        I'm Chris, thanks for checking out my website! Here, you'll find details on programming projects I've done,
+        previews of my writing, and some general information about what I'm interested in.
       </p>
+
       <hr className="divider" />
 
-      <h3>Previous Roles</h3>
-      <h4
-        onClick={toggleAppDevCollapse}
-        className={isAppDevActive ? "active" : ""}
-        style={{ cursor: "pointer" }}
-      >
-        Application Developer
-        <span className={`arrow ${isAppDevActive ? "up" : "down"}`}></span>
-      </h4>
-      <div className={`role-content ${isAppDevActive ? "active" : ""}`}>
-        <h5>Internship</h5>
+      <h3>Experience</h3>
+      <div id="im-spec" className="text-content">
+        <h4>Information Management Specialist</h4>
+        <h5>Atlantic Canada Opportunities Agency</h5>
+        <h5>Internship - 2022</h5>
+        <p>
+          Assisted in the migration of legacy data storage systems to Microsoft SharePoint, shared design recommendations
+          and ensured retention guidelines were enforced.
+        </p>
+        <p>Languages</p>
+        <div id="green" className="bubble">Powershell</div>
+        <div id="green" className="bubble">SQL</div>
+        <div id="green" className="bubble">Power Query</div>
+        <p>Skills</p>
+        <div id="green" className="bubble">Leadership</div>
+        <div id="green" className="bubble">Business Requirements</div>
+        <div id="green" className="bubble">Data Analytics</div>
+      </div>
+      <div id="app-dev" className="text-content">
+        <h4>Application Developer</h4>
+        <h5>Atlantic Canada Opportunities Agency</h5>
+        <h5>Internship - 2021</h5>
         <p>
           Deployed a full-scale .NET web application, collaborated with internal clients to meet software requirements,
           and adapted to evolving priorities.
-          <br />
-          <br />
-          <b>Languages used:</b>
-          <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>C#</li>
-          </ul>
-          <b>Skills used:</b>
-          <ul>
-            <li>Communication</li>
-            <li>Time management</li>
-            <li>Adaptability</li>
-          </ul>
         </p>
+        <p>Languages</p>
+        <div id="blue" className="bubble">HTML</div>
+        <div id="blue" className="bubble">CSS</div>
+        <div id="blue" className="bubble">JavaScript</div>
+        <div id="blue" className="bubble">C#</div>
+        <p>Skills</p>
+        <div id="blue" className="bubble">Communication</div>
+        <div id="blue" className="bubble">Time Management</div>
+        <div id="blue" className="bubble">Apaptability</div>
       </div>
-      <h4
-        onClick={toggleIMCollapse}
-        className={isIMActive ? "active" : ""}
-        style={{ cursor: "pointer" }}
-      >
-        Information Management Specialist
-        <span className={`arrow ${isIMActive ? "up" : "down"}`}></span>
-      </h4>
-      <div className={`role-content ${isIMActive ? "active" : ""}`}>
-        <h5>Internship</h5>
-        <p>
-          Assisted in the migration of legacy data storage systems to Microsoft SharePoint, sharing recommendations
-          and ensuring retention guidelines remained in place.
-          <br />
-          <br />
-          <b>Languages used:</b>
-          <ul>
-            <li>Powershell</li>
-            <li>SQL</li>
-            <li>Power Query</li>
-          </ul>
-          <b>Skills used:</b>
-          <ul>
-            <li>Leadership</li>
-            <li>Business requirements</li>
-            <li>Data analytics</li>
-          </ul>
-        </p>
+
+      <hr className="divider" />
+
+      <h3>Proficiencies</h3>
+      <div id="more-skills" className="text-content">
+        <p>Languages</p>
+        <div id="orange" className="bubble">Java</div>
+        <div id="orange" className="bubble">Python</div>
+        <div id="orange" className="bubble">SQL</div>
+        <p>Frameworks and Libraries</p>
+        <div id="orange" className="bubble">Express.js</div>
+        <div id="orange" className="bubble">React.js</div>
+        <div id="orange" className="bubble">Pandas</div>
+        <div id="orange" className="bubble">ThinkStats2</div>
+        <div id="orange" className="bubble">NumPy</div>
+        <div id="orange" className="bubble">.NET</div>
+        <p>Skills</p>
+        <div id="orange" className="bubble">Full-stack development</div>
+        <div id="orange" className="bubble">UI Design</div>
+        <div id="orange" className="bubble">Cloud Computing</div>
+        <div id="orange" className="bubble">API Interaction</div>
+        <div id="orange" className="bubble">Information Security</div>
       </div>
     </section>
   );
 }
 
 
-
-
-{/* "About" portion of the webpage, containing a short biography and a portrait. */}
+{/* "About" portion of the webpage, containing a short biography. */}
 function AboutMe() {
   return (
     <section id="about">
       <h2>About Me</h2>
-      <img id="portrait" src="/images/portrait.png" alt="portrait" />
       <p>
         Hi! I'm Chris MacArthur. I recently completed my Bachelor of Computer Science degree 
-        from the University of New Brunswick, and I'm looking forward to whatever challenge awaits me next.<br/><br/>
-        Here are a few things I enjoy:
-        <dl>
-          <dt><b>Software-Related Interests:</b></dt>
-          <dd>Full-stack development and projects that involve end-to-end invention, like this website!</dd>
-          <dd>Software security, studying threat prevention, and keeping up-to-date with the latest 
-            cybersecurity advancements.
-          </dd>
-          <dd>Working with data sets and accessing public APIs to craft personal applets.<br/><br/></dd>
-          <dt><b>Hobbies and Other Interests:</b></dt>
-          <dd>Listening to music, collecting vinyl records, and documenting lesser known musical work.</dd>
-          <dd>Reading fiction, writing non-fiction, and all things in the realm of investigative journalism.</dd>
-        </dl>
+        from the University of New Brunswick, and I'm looking forward to whatever challenge awaits me next.
       </p>
+      <div id="hobbies" className="text-content">
+        <h5>Software Interests</h5>
+        <p>
+          Full-stack development and projects that involve end-to-end invention, like this website!
+        </p>
+        <p>
+          Software security, studying threat prevention, and keeping up-to-date with the latest cybersecurity advancements.
+        </p>
+        <p>
+          Working with data sets and accessing public APIs to craft personal applets.
+        </p>
+      </div>
+      <div id="hobbies" className="text-content">
+        <h5>Hobbies and Other Interests</h5>
+        <p>
+          Listening to music, collecting vinyl records, and documenting lesser-known musical work.
+        </p>
+        <p>
+          Reading fiction, writing non-fiction, and all things in the realm of investigative journalism.
+        </p>
+      </div>
     </section>
   );
 }
 
 
-{/* "Portfolio" portion of the webpage, TBA. */}
+{/* "Projects" portion of the webpage, TBA. */}
 function Projects() {
   return (
     <section id="projects">
@@ -199,11 +191,11 @@ function Footer() {
 {/* The central function used to construct the active web components. Responds to props.activePage. */}
 function App() {
 
-  {/* Sets the default <Main> content to the Intro function (loading from base URL 'https://chrismacarthur.dev/'). */}
+  {/* Sets the default <Main> content to the Intro function (loading from base URL "https://chrismacarthur.dev"). */}
   const [activePage, setActivePage] = React.useState("intro");
 
   {/* Checks the hash portion of the URL (#portfolio) to set the appropriate content when loading from section.
-  '[]' as our second argument tells React to only mount this function once, as it is only required for an initial load. */}
+  "[]" as our second argument tells React to only mount this function once, as it is only required for an initial load. */}
   React.useEffect(() => {
     const hash = window.location.hash.substring(1);
     if (["intro", "about", "projects", "essays"].includes(hash)) {

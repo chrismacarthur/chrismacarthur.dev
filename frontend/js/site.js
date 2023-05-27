@@ -48,65 +48,122 @@ function Header(props) {
       return handleClick("essays");
     }
   }, "Essays")), /*#__PURE__*/React.createElement("li", {
-    id: "breaker"
-  }), /*#__PURE__*/React.createElement("li", {
     id: "nav-title"
   }, "chrismacarthur.dev"))));
 }
 {/* "Intro" portion of the webpage, outlines the website's purpose and previous roles. */}
 function Intro() {
-  {/* State variables to track the status of previous role content. */}
-  var _React$useState = React.useState(false),
-    _React$useState2 = _slicedToArray(_React$useState, 2),
-    isAppDevActive = _React$useState2[0],
-    setIsAppDevActive = _React$useState2[1];
-  var _React$useState3 = React.useState(false),
-    _React$useState4 = _slicedToArray(_React$useState3, 2),
-    isIMActive = _React$useState4[0],
-    setIsIMActive = _React$useState4[1];
-  var toggleAppDevCollapse = function toggleAppDevCollapse() {
-    setIsAppDevActive(!isAppDevActive);
-  };
-  var toggleIMCollapse = function toggleIMCollapse() {
-    setIsIMActive(!isIMActive);
-  };
   return /*#__PURE__*/React.createElement("section", {
     id: "intro"
-  }, /*#__PURE__*/React.createElement("h2", null, "Welcome!"), /*#__PURE__*/React.createElement("p", null, "I'm Chris, thanks for checking out my website! Here, you'll find details on some of the programming projects I've worked on, previews of my writing, and some general details about what I'm interested in."), /*#__PURE__*/React.createElement("hr", {
+  }, /*#__PURE__*/React.createElement("h2", null, "Welcome!"), /*#__PURE__*/React.createElement("p", null, "I'm Chris, thanks for checking out my website! Here, you'll find details on programming projects I've done, previews of my writing, and some general information about what I'm interested in."), /*#__PURE__*/React.createElement("hr", {
     className: "divider"
-  }), /*#__PURE__*/React.createElement("h3", null, "Previous Roles"), /*#__PURE__*/React.createElement("h4", {
-    onClick: toggleAppDevCollapse,
-    className: isAppDevActive ? "active" : "",
-    style: {
-      cursor: "pointer"
-    }
-  }, "Application Developer", /*#__PURE__*/React.createElement("span", {
-    className: "arrow ".concat(isAppDevActive ? "up" : "down")
-  })), /*#__PURE__*/React.createElement("div", {
-    className: "role-content ".concat(isAppDevActive ? "active" : "")
-  }, /*#__PURE__*/React.createElement("h5", null, "Internship"), /*#__PURE__*/React.createElement("p", null, "Deployed a full-scale .NET web application, collaborated with internal clients to meet software requirements, and adapted to evolving priorities.", /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("b", null, "Languages used:"), /*#__PURE__*/React.createElement("ul", null, /*#__PURE__*/React.createElement("li", null, "HTML"), /*#__PURE__*/React.createElement("li", null, "CSS"), /*#__PURE__*/React.createElement("li", null, "JavaScript"), /*#__PURE__*/React.createElement("li", null, "C#")), /*#__PURE__*/React.createElement("b", null, "Skills used:"), /*#__PURE__*/React.createElement("ul", null, /*#__PURE__*/React.createElement("li", null, "Communication"), /*#__PURE__*/React.createElement("li", null, "Time management"), /*#__PURE__*/React.createElement("li", null, "Adaptability")))), /*#__PURE__*/React.createElement("h4", {
-    onClick: toggleIMCollapse,
-    className: isIMActive ? "active" : "",
-    style: {
-      cursor: "pointer"
-    }
-  }, "Information Management Specialist", /*#__PURE__*/React.createElement("span", {
-    className: "arrow ".concat(isIMActive ? "up" : "down")
-  })), /*#__PURE__*/React.createElement("div", {
-    className: "role-content ".concat(isIMActive ? "active" : "")
-  }, /*#__PURE__*/React.createElement("h5", null, "Internship"), /*#__PURE__*/React.createElement("p", null, "Assisted in the migration of legacy data storage systems to Microsoft SharePoint, sharing recommendations and ensuring retention guidelines remained in place.", /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("b", null, "Languages used:"), /*#__PURE__*/React.createElement("ul", null, /*#__PURE__*/React.createElement("li", null, "Powershell"), /*#__PURE__*/React.createElement("li", null, "SQL"), /*#__PURE__*/React.createElement("li", null, "Power Query")), /*#__PURE__*/React.createElement("b", null, "Skills used:"), /*#__PURE__*/React.createElement("ul", null, /*#__PURE__*/React.createElement("li", null, "Leadership"), /*#__PURE__*/React.createElement("li", null, "Business requirements"), /*#__PURE__*/React.createElement("li", null, "Data analytics")))));
+  }), /*#__PURE__*/React.createElement("h3", null, "Experience"), /*#__PURE__*/React.createElement("div", {
+    id: "im-spec",
+    className: "text-content"
+  }, /*#__PURE__*/React.createElement("h4", null, "Information Management Specialist"), /*#__PURE__*/React.createElement("h5", null, "Atlantic Canada Opportunities Agency"), /*#__PURE__*/React.createElement("h5", null, "Internship - 2022"), /*#__PURE__*/React.createElement("p", null, "Assisted in the migration of legacy data storage systems to Microsoft SharePoint, shared design recommendations and ensured retention guidelines were enforced."), /*#__PURE__*/React.createElement("p", null, "Languages"), /*#__PURE__*/React.createElement("div", {
+    id: "green",
+    className: "bubble"
+  }, "Powershell"), /*#__PURE__*/React.createElement("div", {
+    id: "green",
+    className: "bubble"
+  }, "SQL"), /*#__PURE__*/React.createElement("div", {
+    id: "green",
+    className: "bubble"
+  }, "Power Query"), /*#__PURE__*/React.createElement("p", null, "Skills"), /*#__PURE__*/React.createElement("div", {
+    id: "green",
+    className: "bubble"
+  }, "Leadership"), /*#__PURE__*/React.createElement("div", {
+    id: "green",
+    className: "bubble"
+  }, "Business Requirements"), /*#__PURE__*/React.createElement("div", {
+    id: "green",
+    className: "bubble"
+  }, "Data Analytics")), /*#__PURE__*/React.createElement("div", {
+    id: "app-dev",
+    className: "text-content"
+  }, /*#__PURE__*/React.createElement("h4", null, "Application Developer"), /*#__PURE__*/React.createElement("h5", null, "Atlantic Canada Opportunities Agency"), /*#__PURE__*/React.createElement("h5", null, "Internship - 2021"), /*#__PURE__*/React.createElement("p", null, "Deployed a full-scale .NET web application, collaborated with internal clients to meet software requirements, and adapted to evolving priorities."), /*#__PURE__*/React.createElement("p", null, "Languages"), /*#__PURE__*/React.createElement("div", {
+    id: "blue",
+    className: "bubble"
+  }, "HTML"), /*#__PURE__*/React.createElement("div", {
+    id: "blue",
+    className: "bubble"
+  }, "CSS"), /*#__PURE__*/React.createElement("div", {
+    id: "blue",
+    className: "bubble"
+  }, "JavaScript"), /*#__PURE__*/React.createElement("div", {
+    id: "blue",
+    className: "bubble"
+  }, "C#"), /*#__PURE__*/React.createElement("p", null, "Skills"), /*#__PURE__*/React.createElement("div", {
+    id: "blue",
+    className: "bubble"
+  }, "Communication"), /*#__PURE__*/React.createElement("div", {
+    id: "blue",
+    className: "bubble"
+  }, "Time Management"), /*#__PURE__*/React.createElement("div", {
+    id: "blue",
+    className: "bubble"
+  }, "Apaptability")), /*#__PURE__*/React.createElement("hr", {
+    className: "divider"
+  }), /*#__PURE__*/React.createElement("h3", null, "Proficiencies"), /*#__PURE__*/React.createElement("div", {
+    id: "more-skills",
+    className: "text-content"
+  }, /*#__PURE__*/React.createElement("p", null, "Languages"), /*#__PURE__*/React.createElement("div", {
+    id: "orange",
+    className: "bubble"
+  }, "Java"), /*#__PURE__*/React.createElement("div", {
+    id: "orange",
+    className: "bubble"
+  }, "Python"), /*#__PURE__*/React.createElement("div", {
+    id: "orange",
+    className: "bubble"
+  }, "SQL"), /*#__PURE__*/React.createElement("p", null, "Frameworks and Libraries"), /*#__PURE__*/React.createElement("div", {
+    id: "orange",
+    className: "bubble"
+  }, "Express.js"), /*#__PURE__*/React.createElement("div", {
+    id: "orange",
+    className: "bubble"
+  }, "React.js"), /*#__PURE__*/React.createElement("div", {
+    id: "orange",
+    className: "bubble"
+  }, "Pandas"), /*#__PURE__*/React.createElement("div", {
+    id: "orange",
+    className: "bubble"
+  }, "ThinkStats2"), /*#__PURE__*/React.createElement("div", {
+    id: "orange",
+    className: "bubble"
+  }, "NumPy"), /*#__PURE__*/React.createElement("div", {
+    id: "orange",
+    className: "bubble"
+  }, ".NET"), /*#__PURE__*/React.createElement("p", null, "Skills"), /*#__PURE__*/React.createElement("div", {
+    id: "orange",
+    className: "bubble"
+  }, "Full-stack development"), /*#__PURE__*/React.createElement("div", {
+    id: "orange",
+    className: "bubble"
+  }, "UI Design"), /*#__PURE__*/React.createElement("div", {
+    id: "orange",
+    className: "bubble"
+  }, "Cloud Computing"), /*#__PURE__*/React.createElement("div", {
+    id: "orange",
+    className: "bubble"
+  }, "API Interaction"), /*#__PURE__*/React.createElement("div", {
+    id: "orange",
+    className: "bubble"
+  }, "Information Security")));
 }
-{/* "About" portion of the webpage, containing a short biography and a portrait. */}
+{/* "About" portion of the webpage, containing a short biography. */}
 function AboutMe() {
   return /*#__PURE__*/React.createElement("section", {
     id: "about"
-  }, /*#__PURE__*/React.createElement("h2", null, "About Me"), /*#__PURE__*/React.createElement("img", {
-    id: "portrait",
-    src: "/images/portrait.png",
-    alt: "portrait"
-  }), /*#__PURE__*/React.createElement("p", null, "Hi! I'm Chris MacArthur. I recently completed my Bachelor of Computer Science degree from the University of New Brunswick, and I'm looking forward to whatever challenge awaits me next.", /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("br", null), "Here are a few things I enjoy:", /*#__PURE__*/React.createElement("dl", null, /*#__PURE__*/React.createElement("dt", null, /*#__PURE__*/React.createElement("b", null, "Software-Related Interests:")), /*#__PURE__*/React.createElement("dd", null, "Full-stack development and projects that involve end-to-end invention, like this website!"), /*#__PURE__*/React.createElement("dd", null, "Software security, studying threat prevention, and keeping up-to-date with the latest cybersecurity advancements."), /*#__PURE__*/React.createElement("dd", null, "Working with data sets and accessing public APIs to craft personal applets.", /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("br", null)), /*#__PURE__*/React.createElement("dt", null, /*#__PURE__*/React.createElement("b", null, "Hobbies and Other Interests:")), /*#__PURE__*/React.createElement("dd", null, "Listening to music, collecting vinyl records, and documenting lesser known musical work."), /*#__PURE__*/React.createElement("dd", null, "Reading fiction, writing non-fiction, and all things in the realm of investigative journalism."))));
+  }, /*#__PURE__*/React.createElement("h2", null, "About Me"), /*#__PURE__*/React.createElement("p", null, "Hi! I'm Chris MacArthur. I recently completed my Bachelor of Computer Science degree from the University of New Brunswick, and I'm looking forward to whatever challenge awaits me next."), /*#__PURE__*/React.createElement("div", {
+    id: "hobbies",
+    className: "text-content"
+  }, /*#__PURE__*/React.createElement("h5", null, "Software Interests"), /*#__PURE__*/React.createElement("p", null, "Full-stack development and projects that involve end-to-end invention, like this website!"), /*#__PURE__*/React.createElement("p", null, "Software security, studying threat prevention, and keeping up-to-date with the latest cybersecurity advancements."), /*#__PURE__*/React.createElement("p", null, "Working with data sets and accessing public APIs to craft personal applets.")), /*#__PURE__*/React.createElement("div", {
+    id: "hobbies",
+    className: "text-content"
+  }, /*#__PURE__*/React.createElement("h5", null, "Hobbies and Other Interests"), /*#__PURE__*/React.createElement("p", null, "Listening to music, collecting vinyl records, and documenting lesser-known musical work."), /*#__PURE__*/React.createElement("p", null, "Reading fiction, writing non-fiction, and all things in the realm of investigative journalism.")));
 }
-{/* "Portfolio" portion of the webpage, TBA. */}
+{/* "Projects" portion of the webpage, TBA. */}
 function Projects() {
   return /*#__PURE__*/React.createElement("section", {
     id: "projects"
@@ -134,13 +191,13 @@ function Footer() {
 }
 {/* The central function used to construct the active web components. Responds to props.activePage. */}
 function App() {
-  {/* Sets the default <Main> content to the Intro function (loading from base URL 'https://chrismacarthur.dev/'). */}
-  var _React$useState5 = React.useState("intro"),
-    _React$useState6 = _slicedToArray(_React$useState5, 2),
-    activePage = _React$useState6[0],
-    setActivePage = _React$useState6[1];
+  {/* Sets the default <Main> content to the Intro function (loading from base URL "https://chrismacarthur.dev"). */}
+  var _React$useState = React.useState("intro"),
+    _React$useState2 = _slicedToArray(_React$useState, 2),
+    activePage = _React$useState2[0],
+    setActivePage = _React$useState2[1];
   {/* Checks the hash portion of the URL (#portfolio) to set the appropriate content when loading from section.
-   '[]' as our second argument tells React to only mount this function once, as it is only required for an initial load. */}
+   "[]" as our second argument tells React to only mount this function once, as it is only required for an initial load. */}
   React.useEffect(function () {
     var hash = window.location.hash.substring(1);
     if (["intro", "about", "projects", "essays"].includes(hash)) {
