@@ -183,6 +183,11 @@ function Essays() {
 
 {/* Main function used to determine the <main> body of the SPA, depending on the active nav bar selection */}
 function Main(props) {
+
+  React.useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, [props.activePage]);
+
   return (
     <main>
       {props.activePage === "intro" && <Intro />}
