@@ -99,10 +99,6 @@ h4 {
   display: block;
 }
 
-#about h4 {
-  display: inline-block;
-}
-
 h5 {
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-weight: normal;
@@ -148,13 +144,12 @@ p {
   border-color: #07f87342;
 }
 #hobbies {
-  border-color: #6a27b65e;
+  border-color: #7021ca81;
 }
 #hobbies p {
   display: block;
 }
 #more-skills {
-  text-align: center;
   border-color: #e49e1c38;
 }
 
@@ -180,6 +175,24 @@ p {
 #orange {
   background-color: #e49e1c38;
   color: #ffae19;
+}
+
+.music-container {
+  text-align: center;
+}
+.music-container img {
+  padding: 15px 0px;
+  display: inline-block;
+  margin: auto;
+  transition: all 0.5s ease;
+}
+.music-container p {
+  display: block;
+  text-align: center;
+  font-size: 16px;
+}
+.music-container img:hover {
+  transform: rotate(360deg) scale(1.1);
 }
 
 
