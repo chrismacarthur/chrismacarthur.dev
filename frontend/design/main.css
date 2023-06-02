@@ -29,12 +29,6 @@ hr.divider {
   font-size: 48px;
   margin-left: auto;
   justify-content: flex-end;
-  transition: all .1s ease;
-}
-
-#nav-title:hover {
-  transform: translateY(-5px);
-  color: #10b158;
 }
   
 nav ul {
@@ -122,6 +116,7 @@ p {
   display: inline-block;
 }
 
+
 /* Styling for text-content boxes. */
 .text-content {
   font-family: Arial, Helvetica, sans-serif;
@@ -144,7 +139,7 @@ p {
   border-color: #07f87342;
 }
 #hobbies {
-  border-color: #7021ca81;
+  border-color: #7021ca96;
 }
 #hobbies p {
   display: block;
@@ -177,6 +172,8 @@ p {
   color: #ffae19;
 }
 
+
+/* Styling for interactive music recommendation icon. */
 .music-container {
   text-align: center;
 }
@@ -196,39 +193,14 @@ p {
 }
 
 
-.essay-container {
-  display: grid;
-  grid-template-rows: 1fr;
-  grid-gap: 10px;
-}
-
-.essay {
+/* Styling for interactive buttons. */
+button {
   background-color: #202022;
-  font-family:'Times New Roman', Times, serif;
-  font-size: 24px;
-  font-weight: bolder;
-  padding: 80px;
-  margin: 10px;
+  font-size: 16px;
+  border: solid 2px;
+  cursor: pointer;
+  padding: 10px 15px;
   border-radius: 4px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  border: 1px solid #ccc;
-  transition: all 0.1s;
-}
-
-.essay-description {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 18px;
-  font-weight: normal;
-  margin-top: 10px;
-  text-align: center;
-}
-
-.essay:hover {
-  transform: scale(1.02);
-  filter: brightness(90%);
 }
 
 footer {

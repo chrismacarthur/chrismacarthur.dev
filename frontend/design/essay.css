@@ -1,0 +1,229 @@
+#essay-preview {
+  position: relative;
+  margin-left: 15%;
+  margin-right: 15%;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  cursor: pointer;
+  text-align: center;
+  border-color: #e2e0e0d5;
+  overflow: hidden;
+}
+/* required stylings to keep text from being affected by filter. */
+#essay-preview::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.75));
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 1;
+}
+#essay-preview::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 2;
+}
+#essay-preview p {
+  position: relative;
+  z-index: 3;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+#essay-preview:hover::before {
+  opacity: 1;
+}
+#essay-preview:hover::after {
+  opacity: 0;
+}
+#essay-preview:hover p {
+  opacity: 1;
+}
+
+/* Styling for the list of essay previews. */
+.essay-list {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-gap: 10px;
+}
+
+.essay-header h2 {
+  text-align: center;
+  max-width: 100%;
+}
+
+
+/* Styling for the essay content and various changes depending on user settings. */
+.essay-content {
+  font-family: 'Times New Roman', Times, serif;
+  width: 65%;
+  border-radius: 2px;
+  margin: auto;
+  margin-top: 75px;
+  margin-bottom: 25px;
+  user-select: none;
+}
+.wide .essay-content {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+.light-mode .essay-content {
+  background-color: #e2e0e0;
+  color: black;
+}
+.dark-mode .essay-content {
+  background-color: #101011;
+  border: solid 2px;
+  border-color: #e2e0e0d5;
+  color: #e2e0e0;
+}
+/* called when switching settings. */
+.essay-transition {
+  animation: essayTransition 0.3s ease-in-out;
+}
+
+.essay-citations-title {
+  text-align: center;
+}
+
+.wide .essay-title {
+  font-size: 48px;
+}
+.wide .essay-notes {
+  font-size: 16px;
+}
+.wide .essay-citations-title {
+  font-size: 24px;
+}
+.wide .essay-citations {
+  font-size: 16px;
+  line-height: 1.5;
+}
+.dark-mode.wide .essay-content {
+  width: 100%;
+  background-color: #2d2d30;
+  border: 0px;
+}
+.light-mode.wide .essay-content {
+  width: 100%;
+  background-color: #e2e0e0;
+  border: 0px;
+}
+
+
+/* styling for options/settings. */
+.essay-options-right {
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+  position: fixed;
+  right: 3%;
+  top: 100px;
+}
+.essay-options-left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1;
+  position: fixed;
+  left: 3%;
+  top: 100px;
+}
+.essay-options button {
+  border-color: #e2e0e0d5;
+  color: #e2e0e0;
+  margin: 0px 5px;
+  transition: all 0.1s ease;
+}
+.essay-options button:hover {
+  transform: scale(1.05);
+}
+/* styling for help icon. */
+.essay-help {
+  position: relative;
+  display: inline-block;
+  margin-left: 15px;
+}
+.help-icon {
+  font-family: Arial, Helvetica, sans-serif;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  padding: 10px 10px;
+  font-size: 18px;
+  text-align: center;
+  background-color: #303033;
+  border: 2px solid #e2e0e0d5;
+  color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.help-text {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  padding: 10px;
+  margin-top: 15px;
+  background-color: #2d2d30;
+  border: 2px solid #e2e0e0d5;
+  border-radius: 4px;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.essay-help:hover .help-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+#essay-preview p {
+  opacity: 0;
+}
+#essay-preview p.hover {
+  opacity: 1;
+}
+
+
+.essay-title {
+  text-align: center;
+  padding-top: 5%
+}
+.essay-body {
+  line-height: 2;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 5%;
+}
+
+.note {
+  margin-top: 10px;
+}
+
+.essay-citations-title {
+  text-align: center;
+}
+
+
+@keyframes essayTransition {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
