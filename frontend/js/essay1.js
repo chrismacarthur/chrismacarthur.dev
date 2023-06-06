@@ -1,6 +1,6 @@
 "use strict";
 
-var Essay1 = function Essay1() {
+function Essay1() {
   return /*#__PURE__*/React.createElement("div", {
     className: "essay-content"
   }, /*#__PURE__*/React.createElement("div", {
@@ -26,4 +26,4 @@ var Essay1 = function Essay1() {
   }, "Sources", /*#__PURE__*/React.createElement("br", null)), /*#__PURE__*/React.createElement("div", {
     className: "essay-citations"
   }, "Orwell, George. \u201CPolitics and the English Language.\u201D ", /*#__PURE__*/React.createElement("i", null, "The Orwell Foundation"), ", Originally Published 1946. https://www.orwellfoundation.com/the-orwell-foundation/orwell/essays-and-other-works/politics-and-the-english-language/. Accessed 11 January 2023.", /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("br", null), "Laurinavicius, Tomas. \u201CWriting Statistics: Facts, Salaries & Industry Trends.\u201D ", /*#__PURE__*/React.createElement("i", null, "Best Writing"), ". https://bestwriting.com/blog/writing-statistics. Accessed 19 January 2023.", /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("br", null), "\u201CAdoption of communication technologies per 100 people.\u201D ", /*#__PURE__*/React.createElement("i", null, "Our World in Data"), ". https://ourworldindata.org/grapher/ict-adoption-per-100-people. Accessed 18 January 2023.", /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("br", null), "\u201CNational Assessment of Adult Literacy.\u201D ", /*#__PURE__*/React.createElement("i", null, "National Center for Education Statistics"), ". https://nces.ed.gov/naal/lit_history.asp. Accessed 19 January 2023.", /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("br", null), "Bhana, Yusuf . \u201CHow the Internet is Changing Language.\u201D ", /*#__PURE__*/React.createElement("i", null, "Toppan Digital Language"), ". https://toppandigital.com/us/blog-us/how-the-internet-is-changing-language/. Accessed 20 January 2023.", /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("br", null), "Daniels, Peter. ", /*#__PURE__*/React.createElement("i", null, "The World\u2019s Writing Systems"), ". Oxford, 1996.")));
-};
+}

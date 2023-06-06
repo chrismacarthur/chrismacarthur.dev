@@ -1,4 +1,4 @@
-const Essay0 = () => {
+function Essay0() {
   return (
     <div className="essay-content">
       <div className="essay-title">
@@ -47,7 +47,7 @@ const Essay0 = () => {
       </div>
     </div>
   );
-};
+}
 
 
   

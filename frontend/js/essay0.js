@@ -1,6 +1,6 @@
 "use strict";
 
-var Essay0 = function Essay0() {
+function Essay0() {
   return /*#__PURE__*/React.createElement("div", {
     className: "essay-content"
   }, /*#__PURE__*/React.createElement("div", {
@@ -24,4 +24,4 @@ var Essay0 = function Essay0() {
   }, "Sources", /*#__PURE__*/React.createElement("br", null)), /*#__PURE__*/React.createElement("div", {
     className: "essay-citations"
   }, "The Alchemist. \u201CAlchemist On Turning Beats Into A Business, Cutting Out The Music Industry.\u201D ", /*#__PURE__*/React.createElement("i", null, "YouTube"), ", uploaded by IDEA GENERATION, 17 November 2021, www.youtube.com/watch?v=OTGheE1muVI&t=0s. Accessed 21 March 2023.", /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("br", null), "Boldy James, The Alchemist. ", /*#__PURE__*/React.createElement("i", null, "Bo Jackson"), ", ALC Records, 2021, alcrecords.com/collections/alc-records-catalog/products/bo-jackson-digital-album.", /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("br", null), "Christopher, Brianne. \u201CThe History and Science Behind Vinyl Records.\u201D ", /*#__PURE__*/React.createElement("i", null, "COMSOL"), ", 17 August 2021, www.comsol.com/blogs/the-history-and-science-behind-vinyl-records/. Accessed 25 March 2023.", /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("br", null), "Drenon, Brandon. \u201CVinyl records outsell CDs for first time in decades.\u201D ", /*#__PURE__*/React.createElement("i", null, "BBC"), ", 13 March 2023, www.bbc.com/news/64919126. Accessed 21 March 2023.", /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("br", null), "\u201CModern listeners shifting towards playlists over albums, study shows.\u201D ", /*#__PURE__*/React.createElement("i", null, "MN2S"), ", 14 April 2020, mn2s.com/news/label-services/modern-listeners-shifting-towards-playlists-over-albums-study-shows/. Accessed 19 March 2023.")));
-};
+}
