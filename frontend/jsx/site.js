@@ -81,10 +81,20 @@ function Intro() {
 
       <h3>Proficiencies</h3>
       <div id="more-skills" className="text-content">
-        <p>Languages</p>
+        <p>Operating Systems</p>
+        <div id="orange" className="bubble">Windows</div>
+        <div id="orange" className="bubble">Linux</div>
+        <p>Proficient Languages</p>
         <div id="orange" className="bubble">Java</div>
         <div id="orange" className="bubble">Python</div>
         <div id="orange" className="bubble">SQL</div>
+        <div id="orange" className="bubble">HTML</div>
+        <div id="orange" className="bubble">CSS</div>
+        <div id="orange" className="bubble">JavaScript</div>
+        <p>Familiar Languages</p>
+        <div id="orange" className="bubble">C#</div>
+        <div id="orange" className="bubble">Power Query</div>
+        <div id="orange" className="bubble">Powershell</div>
         <p>Frameworks and Libraries</p>
         <div id="orange" className="bubble">Express.js</div>
         <div id="orange" className="bubble">React.js</div>
@@ -92,8 +102,8 @@ function Intro() {
         <div id="orange" className="bubble">ThinkStats2</div>
         <div id="orange" className="bubble">NumPy</div>
         <div id="orange" className="bubble">.NET</div>
-        <p>Skills</p>
-        <div id="orange" className="bubble">Full-stack development</div>
+        <p>Concepts</p>
+        <div id="orange" className="bubble">Full-stack Development</div>
         <div id="orange" className="bubble">UI Design</div>
         <div id="orange" className="bubble">Cloud Computing</div>
         <div id="orange" className="bubble">API Interaction</div>

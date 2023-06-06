@@ -107,7 +107,13 @@ function Intro() {
   }), /*#__PURE__*/React.createElement("h3", null, "Proficiencies"), /*#__PURE__*/React.createElement("div", {
     id: "more-skills",
     className: "text-content"
-  }, /*#__PURE__*/React.createElement("p", null, "Languages"), /*#__PURE__*/React.createElement("div", {
+  }, /*#__PURE__*/React.createElement("p", null, "Operating Systems"), /*#__PURE__*/React.createElement("div", {
+    id: "orange",
+    className: "bubble"
+  }, "Windows"), /*#__PURE__*/React.createElement("div", {
+    id: "orange",
+    className: "bubble"
+  }, "Linux"), /*#__PURE__*/React.createElement("p", null, "Proficient Languages"), /*#__PURE__*/React.createElement("div", {
     id: "orange",
     className: "bubble"
   }, "Java"), /*#__PURE__*/React.createElement("div", {
@@ -116,7 +122,25 @@ function Intro() {
   }, "Python"), /*#__PURE__*/React.createElement("div", {
     id: "orange",
     className: "bubble"
-  }, "SQL"), /*#__PURE__*/React.createElement("p", null, "Frameworks and Libraries"), /*#__PURE__*/React.createElement("div", {
+  }, "SQL"), /*#__PURE__*/React.createElement("div", {
+    id: "orange",
+    className: "bubble"
+  }, "HTML"), /*#__PURE__*/React.createElement("div", {
+    id: "orange",
+    className: "bubble"
+  }, "CSS"), /*#__PURE__*/React.createElement("div", {
+    id: "orange",
+    className: "bubble"
+  }, "JavaScript"), /*#__PURE__*/React.createElement("p", null, "Familiar Languages"), /*#__PURE__*/React.createElement("div", {
+    id: "orange",
+    className: "bubble"
+  }, "C#"), /*#__PURE__*/React.createElement("div", {
+    id: "orange",
+    className: "bubble"
+  }, "Power Query"), /*#__PURE__*/React.createElement("div", {
+    id: "orange",
+    className: "bubble"
+  }, "Powershell"), /*#__PURE__*/React.createElement("p", null, "Frameworks and Libraries"), /*#__PURE__*/React.createElement("div", {
     id: "orange",
     className: "bubble"
   }, "Express.js"), /*#__PURE__*/React.createElement("div", {
@@ -134,10 +158,10 @@ function Intro() {
   }, "NumPy"), /*#__PURE__*/React.createElement("div", {
     id: "orange",
     className: "bubble"
-  }, ".NET"), /*#__PURE__*/React.createElement("p", null, "Skills"), /*#__PURE__*/React.createElement("div", {
+  }, ".NET"), /*#__PURE__*/React.createElement("p", null, "Concepts"), /*#__PURE__*/React.createElement("div", {
     id: "orange",
     className: "bubble"
-  }, "Full-stack development"), /*#__PURE__*/React.createElement("div", {
+  }, "Full-stack Development"), /*#__PURE__*/React.createElement("div", {
     id: "orange",
     className: "bubble"
   }, "UI Design"), /*#__PURE__*/React.createElement("div", {
