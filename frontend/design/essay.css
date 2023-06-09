@@ -1,3 +1,4 @@
+/* Styling for essay previews. */
 #essay-preview {
   position: relative;
   margin-left: 15%;
@@ -9,7 +10,7 @@
   border-color: #e2e0e0d5;
   overflow: hidden;
 }
-/* required stylings to keep text from being affected by filter. */
+/* Required stylings to keep text from being affected by filter. */
 #essay-preview::before {
   content: "";
   position: absolute;
@@ -49,17 +50,21 @@
 #essay-preview:hover p {
   opacity: 1;
 }
+#essay-preview p.hover {
+  opacity: 1;
+}
+
+.essay-header h2 {
+  text-align: center;
+  max-width: 100%;
+}
+
 
 /* Styling for the list of essay previews. */
 .essay-list {
   display: grid;
   grid-template-rows: 1fr;
   grid-gap: 10px;
-}
-
-.essay-header h2 {
-  text-align: center;
-  max-width: 100%;
 }
 
 
@@ -87,28 +92,6 @@
   border-color: #e2e0e0d5;
   color: #e2e0e0;
 }
-/* called when switching settings. */
-.essay-transition {
-  animation: essayTransition 0.3s ease-in-out;
-}
-
-.essay-citations-title {
-  text-align: center;
-}
-
-.wide .essay-title {
-  font-size: 48px;
-}
-.wide .essay-notes {
-  font-size: 16px;
-}
-.wide .essay-citations-title {
-  font-size: 24px;
-}
-.wide .essay-citations {
-  font-size: 16px;
-  line-height: 1.5;
-}
 .dark-mode.wide .essay-content {
   width: 100%;
   background-color: #2d2d30;
@@ -121,7 +104,45 @@
 }
 
 
-/* styling for options/settings. */
+/* Called when switching settings. */
+.essay-transition {
+  animation: essayTransition 0.3s ease-in-out;
+}
+
+
+/* Additional styling for essay fonts. */
+.essay-title {
+  text-align: center;
+  padding-top: 5%
+}
+.essay-body {
+  line-height: 2;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 5%;
+}
+.wide .essay-title {
+  font-size: 48px;
+}
+.wide .essay-notes {
+  font-size: 16px;
+}
+.note {
+  margin-top: 10px;
+}
+.essay-citations-title {
+  text-align: center;
+}
+.wide .essay-citations-title {
+  font-size: 24px;
+}
+.wide .essay-citations {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+
+/* Styling for options/settings. */
 .essay-options-right {
   display: flex;
   justify-content: space-between;
@@ -148,7 +169,9 @@
 .essay-options button:hover {
   transform: scale(1.05);
 }
-/* styling for help icon. */
+
+
+/* Styling for help icon. */
 .essay-help {
   position: relative;
   display: inline-block;
@@ -186,34 +209,6 @@
 .essay-help:hover .help-text {
   visibility: visible;
   opacity: 1;
-}
-
-
-#essay-preview p {
-  opacity: 0;
-}
-#essay-preview p.hover {
-  opacity: 1;
-}
-
-
-.essay-title {
-  text-align: center;
-  padding-top: 5%
-}
-.essay-body {
-  line-height: 2;
-  padding-left: 5%;
-  padding-right: 5%;
-  padding-bottom: 5%;
-}
-
-.note {
-  margin-top: 10px;
-}
-
-.essay-citations-title {
-  text-align: center;
 }
 
 
