@@ -57,12 +57,12 @@ function Intro() {
         <p>Proficient Languages</p>
         <div id="orange" className="bubble">Java</div>
         <div id="orange" className="bubble">Python</div>
-        <div id="orange" className="bubble">SQL</div>
+        <div id="orange" className="bubble">C#</div>
         <div id="orange" className="bubble">HTML</div>
         <div id="orange" className="bubble">CSS</div>
         <div id="orange" className="bubble">JavaScript</div>
         <p>Familiar Languages</p>
-        <div id="orange" className="bubble">C#</div>
+        <div id="orange" className="bubble">SQL</div>
         <div id="orange" className="bubble">Power Query</div>
         <div id="orange" className="bubble">Powershell</div>
         <p>Frameworks and Libraries</p>
@@ -74,6 +74,7 @@ function Intro() {
         <div id="orange" className="bubble">.NET</div>
         <p>Concepts</p>
         <div id="orange" className="bubble">Full-stack Development</div>
+        <div id="orange" className="bubble">DevOps</div>
         <div id="orange" className="bubble">UI Design</div>
         <div id="orange" className="bubble">Cloud Computing</div>
         <div id="orange" className="bubble">API Interaction</div>
