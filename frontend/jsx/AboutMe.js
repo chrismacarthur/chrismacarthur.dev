@@ -8,7 +8,7 @@ function AboutMe() {
         from the University of New Brunswick, and I'm looking forward to whatever challenge awaits me next.
       </p>
       <div className="music-container">
-        <a href="https://farmband.bandcamp.com/album/farm" target="_blank">
+        <a href="https://illwind.bandcamp.com/album/flashes" target="_blank">
           <img src="/images/record.png" alt="Music Recommendation" height="80" width="80" />
         </a>
         <p>
