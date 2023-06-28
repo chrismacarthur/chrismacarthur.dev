@@ -58,13 +58,13 @@ function Essays() {
   const essays = [
     {
       title: "From Analog to Digital: Why the Album Is Here to Stay",
-      image_url: "./images/shelf.jpg",
+      image_url: "./images/essay0.jpg",
       image_height: "top",
       component: Essay0,
     },
     {
       title: "The Expansion of Expression",
-      image_url: "./images/books.jpg",
+      image_url: "./images/essay1.jpg",
       image_height: "top",
       component: Essay1,
     },
