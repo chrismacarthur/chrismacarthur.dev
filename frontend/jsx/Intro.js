@@ -10,7 +10,6 @@ function Intro() {
 
       <hr className="divider" />
 
-      <h3>Experience</h3>
       <div id="im-spec" className="text-content">
         <h4>Information Management Specialist</h4>
         <h5>Atlantic Canada Opportunities Agency</h5>
@@ -49,7 +48,7 @@ function Intro() {
 
       <hr className="divider" />
 
-      <h3>Proficiencies</h3>
+      <h3>Additional Experience</h3>
       <div id="more-skills" className="text-content">
         <p>Operating Systems</p>
         <div id="orange" className="bubble">Windows</div>
