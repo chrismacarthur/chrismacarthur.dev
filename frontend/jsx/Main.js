@@ -1,4 +1,4 @@
-{/* Main function used to determine the <main> body of the SPA, depending on the active nav bar selection */}
+{/* Function used to determine the <main> body of the SPA, depending on the active nav bar selection */}
 function Main(props) {
 
   React.useEffect(() => {

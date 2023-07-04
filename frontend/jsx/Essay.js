@@ -1,4 +1,4 @@
-{/* "Essays" portion of the webpage. */}
+{/* "Essays" component for previewing/mounting essays and modifying viewing options. */}
 function Essays() {
 
   {/* Tracks essay selection and hover status. */}

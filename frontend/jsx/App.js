@@ -1,11 +1,10 @@
 {/* The central function used to construct the active web components. Responds to props.activePage. */}
 function App() {
 
-  {/* Sets the default <Main> content to the Intro function (loading from base URL "https://chrismacarthur.dev"). */}
+  {/* Sets the default <Main> content to the "#intro" component (at base URL "https://chrismacarthur.dev"). */}
   const [activePage, setActivePage] = React.useState("intro");
 
-  {/* Checks the hash portion of the URL (#portfolio) to set the appropriate content when loading from section.
-  "[]" as our second argument tells React to only mount this function once, as it is only required for an initial load. */}
+  {/* Checks the hash portion of the URL (i.e. "#about") to set the appropriate content when loading from section. */}
   React.useEffect(() => {
     const hash = window.location.hash.substring(1);
     if (["intro", "about", "projects", "essays"].includes(hash)) {

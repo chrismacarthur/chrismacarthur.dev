@@ -1,4 +1,4 @@
-{/* "About" portion of the webpage, containing a short biography. */}
+{/* "About" component containing a short biography, personal interests, and music recommendation. */}
 function AboutMe() {
   return (
     <section id="about">

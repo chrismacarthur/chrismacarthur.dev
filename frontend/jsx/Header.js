@@ -1,8 +1,10 @@
-{/* "Header" portion of the webpage, outlines the navigation bar. Includes handling for tracking active selection. */}
+{/* "Header" component for outlining the navigation bar. Tracks active selection. */}
 function Header(props) {
+
   const handleClick = (page) => {
     props.setActivePage(page);
   };
+  
   return (
     <header>
       <nav>

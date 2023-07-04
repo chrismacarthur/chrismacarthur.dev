@@ -1,3 +1,4 @@
+{/* From Analog to Digital: Why the Album Is Here to Stay. */}
 function Essay0() {
   return (
     <div className="essay-content">

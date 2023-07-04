@@ -1,3 +1,4 @@
+{/* The Expansion of Expression. */}
 function Essay1() {
   return (
     <div className="essay-content">

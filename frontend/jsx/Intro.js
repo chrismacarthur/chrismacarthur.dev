@@ -1,4 +1,4 @@
-{/* "Intro" portion of the webpage, outlines the website's purpose and previous roles. */}
+{/* "Intro" component that outlines previous roles and experience. */}
 function Intro() {
   return (
     <section id="intro">
