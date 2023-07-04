@@ -2,7 +2,7 @@
 function Projects() {
   return (
     <section id="projects">
-      <h2>Under Construction..</h2>
+      <h1>Under Construction..</h1>
       <p>
         Eventually, this section will act as a hub for programming projects I've worked on. Stay posted!
       </p>

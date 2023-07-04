@@ -2,7 +2,7 @@
 function AboutMe() {
   return (
     <section id="about">
-      <h2>About Me</h2>
+      <h1>About Me</h1>
       <p>
         Hi! I'm Chris MacArthur. I recently completed my Bachelor of Computer Science degree 
         from the University of New Brunswick, and I'm looking forward to whatever challenge awaits me next.
@@ -18,9 +18,9 @@ function AboutMe() {
 
       <hr className="divider" />
 
-      <h3>Interests</h3>
+      <h2>Interests</h2>
       <div id="hobbies" className="text-content">
-        <h4>Software</h4>
+        <h3>Software</h3>
         <p>
           Full-stack development and projects that involve end-to-end invention, like this website!
         </p>
@@ -32,7 +32,7 @@ function AboutMe() {
         </p>
       </div>
       <div id="hobbies" className="text-content">
-        <h4>Hobbies</h4>
+        <h3>Hobbies</h3>
         <p>
           Listening to music, collecting vinyl records, and documenting lesser-known musical work.
         </p>

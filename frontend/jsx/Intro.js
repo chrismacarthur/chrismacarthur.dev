@@ -2,7 +2,7 @@
 function Intro() {
   return (
     <section id="intro">
-      <h2>Welcome!</h2>
+      <h1>Welcome!</h1>
       <p>
         I'm Chris, thanks for checking out my website! Here, you'll find details on programming projects I've done,
         previews of my writing, and some general information about what I'm interested in.
@@ -11,9 +11,9 @@ function Intro() {
       <hr className="divider" />
 
       <div id="im-spec" className="text-content">
-        <h4>Information Management Specialist</h4>
-        <h5>Atlantic Canada Opportunities Agency</h5>
-        <h5>Internship - 2022</h5>
+        <h3>Information Management Specialist</h3>
+        <h4>Atlantic Canada Opportunities Agency</h4>
+        <h4>Internship - 2022</h4>
         <p>
           Assisted in the migration of legacy data storage systems to Microsoft SharePoint, shared design recommendations
           and ensured retention guidelines were enforced.
@@ -28,9 +28,9 @@ function Intro() {
         <div id="green" className="bubble">Data Analytics</div>
       </div>
       <div id="app-dev" className="text-content">
-        <h4>Application Developer</h4>
-        <h5>Atlantic Canada Opportunities Agency</h5>
-        <h5>Internship - 2021</h5>
+        <h3>Application Developer</h3>
+        <h4>Atlantic Canada Opportunities Agency</h4>
+        <h4>Internship - 2021</h4>
         <p>
           Deployed a full-scale .NET web application, collaborated with internal clients to meet software requirements,
           and adapted to evolving priorities.
@@ -48,7 +48,7 @@ function Intro() {
 
       <hr className="divider" />
 
-      <h3>Additional Experience</h3>
+      <h2>Additional Experience</h2>
       <div id="more-skills" className="text-content">
         <p>Operating Systems</p>
         <div id="orange" className="bubble">Windows</div>

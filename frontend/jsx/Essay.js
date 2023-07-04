@@ -76,7 +76,7 @@ function Essays() {
       {/* Show page header if an essay isn't selected */}
       {selectedEssayIndex === null ? (
         <div className="essay-header">
-          <h2>Essays</h2>
+          <h1>Essays</h1>
           <hr className="divider" />
         </div>
       ) : (
