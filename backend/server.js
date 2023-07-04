@@ -18,13 +18,6 @@ const fs = require("fs") // Node.js file system API.
 // Connects path to frontend (where index.html will be found and served by default).
 app.use(express.static(path.join(__dirname, "..", "frontend")));
 
-// Sample endpoint TBD.
-app.get("/hi", (req, res) => { 
-  let message = "hi buddy :)"
-  //message += req.query.name
-  res.send(message)
-})
-
 
 // For unrecognized GET requests, serve 404.html
 app.get("*", (req, res) => {
