@@ -1,4 +1,4 @@
-/* Styling for essay previews. */
+/* Styling for essay preview. */
 #essay-preview {
   position: relative;
   margin-left: 15%;
@@ -11,6 +11,8 @@
   border-color: #e2e0e0d5;
   overflow: hidden;
 }
+
+
 /* Required stylings to keep text from being affected by filter. */
 #essay-preview::before {
   content: "";
@@ -207,6 +209,7 @@
 }
 
 
+/* Animation for swapping view settings. */
 @keyframes essayTransition {
   from {
     opacity: 0;
